@@ -1,0 +1,5 @@
+["Malaysia", "Pilipinas"]
+["Pilipinas", "Malaysia"]
+["Pilipinas", "Republika ng Tsina", "Republikang Bayan ng Tsina"]
+["Republika ng Tsina", "Republikang Bayan ng Tsina", "Pilipinas"]
+["Vietnam", "Malaysia", "Republika ng Tsina", "Republikang Bayan ng Tsina", "Brunei", "Pilipinas"]

@@ -1,0 +1,5 @@
+["Madagaskar", "Frantsa", "Comores"]
+["Frantsa", "Madagaskar"]
+["Madagaskar", "Frantsa"]
+["Frantsa", "Madagaskar"]
+["Madagaskar", "Frantsa", "Comores"]

@@ -1,0 +1,1 @@
+["Syria", "West Bank", "Golan Heights", "Shebaa Farms", "Gaza Strip", "Palestine", "Green Line", "East Jerusalem", "Israel", "Lebanon"]

@@ -1,0 +1,1 @@
+["Zaporizhzhia Oblast", "Kinburn Peninsula", "Kherson Oblast", "Donetsk Oblast", "Crimea", "Mykolaiv Oblast", "Russia", "Sevastopol", "Ukraine", "Snihurivka", "Luhansk Oblast"]

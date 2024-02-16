@@ -1,0 +1,234 @@
+Is Abyei a territory of A) South Sudan or B) Sudan?
+Is Heglig a territory of A) Sudan or B) South Sudan?
+Is Kafia Kingi a territory of A) Sudan or B) South Sudan?
+Is Banc du Geyser a territory of A) Madagascar or B) France or C) Comoros?
+Is Bassas da India a territory of A) France or B) Madagascar?
+Is Europa Island a territory of A) Madagascar or B) France?
+Is Juan de Nova Island a territory of A) France or B) Madagascar?
+Is Ceuta a territory of A) Morocco or B) Spain?
+Is Melilla a territory of A) Spain or B) Morocco?
+Is plazas de soberanía a territory of A) Morocco or B) Spain?
+Is Chagos Archipelago a territory of A) United Kingdom or B) Mauritius or C) Maldives?
+Is Ras Doumeira a territory of A) Eritrea or B) Djibouti?
+Is Doumeira Island a territory of A) Eritrea or B) Djibouti?
+Is Glorioso Islands a territory of A) Madagascar or B) France or C) Comoros?
+Is Hala'ib Triangle a territory of A) Sudan or B) Egypt?
+Is Ilemi Triangle a territory of A) Kenya or B) South Sudan?
+Is KaNgwane a territory of A) Eswatini or B) South Africa?
+Is Ingwavuma a territory of A) Eswatini or B) South Africa?
+Is Koalou a territory of A) Burkina Faso or B) Benin?
+Is Sipilou a territory of A) Ivory Coast or B) Guinea?
+Is Logoba a territory of A) Uganda or B) South Sudan?
+Is Moyo District a territory of A) Uganda or B) South Sudan?
+Is Chiengi a territory of A) Zambia or B) Democratic Republic of Congo?
+Is Lunchinda-Pweto Province a territory of A) Democratic Republic of Congo or B) Zambia?
+Is Mayotte a territory of A) France or B) Comoros?
+Is Mbamba Bay a territory of A) Tanzania or B) Malawi?
+Is Lake Nyasa a territory of A) Malawi or B) Tanzania?
+Is Mbañie Island a territory of A) Equatorial Guinea or B) Gabon?
+Is Cocotiers a territory of A) Equatorial Guinea or B) Gabon?
+Is Congas Island a territory of A) Equatorial Guinea or B) Gabon?
+Is Migingo Island a territory of A) Kenya or B) Uganda?
+Is Lolwe a territory of A) Kenya or B) Uganda?
+Is Oyasi a territory of A) Uganda or B) Kenya?
+Is Remba a territory of A) Uganda or B) Kenya?
+Is Ringiti a territory of A) Uganda or B) Kenya?
+Is Sigulu a territory of A) Kenya or B) Uganda?
+Is Lake Victoria a territory of A) Uganda or B) Kenya?
+Is Congo River a territory of A) Republic of the Congo or B) Democratic Republic of Congo?
+Is Ntem River a territory of A) Equatorial Guinea or B) Cameroon?
+Is Okpara River a territory of A) Nigeria or B) Benin?
+Is Orange River a territory of A) South Africa or B) Namibia?
+Is Rukwanzi Island a territory of A) Democratic Republic of Congo or B) Uganda?
+Is Semliki River a territory of A) Uganda or B) Democratic Republic of Congo?
+Is Sindabezi Island a territory of A) Zimbabwe or B) Zambia?
+Is Socotra Archipelago a territory of A) Somalia or B) Yemen?
+Is Tromelin Island a territory of A) Mauritius or B) France?
+Is Wadi Halfa a territory of A) Sudan or B) Egypt?
+Is Ashmore and Cartier Islands a territory of A) Australia or B) Indonesia?
+Is Aarsal a territory of A) Syria or B) Lebanon?
+Is Deir El Aachayer a territory of A) Syria or B) Lebanon?
+Is Kfar Qouq a territory of A) Syria or B) Lebanon?
+Is Mazraat Deir al-Ashayer a territory of A) Syria or B) Lebanon?
+Is Qaa a territory of A) Lebanon or B) Syria?
+Is Qasr a territory of A) Lebanon or B) Syria?
+Is Tuffah a territory of A) Syria or B) Lebanon?
+Is Shatt al-Arab a territory of A) Iraq or B) Iran?
+Is Abu Musa a territory of A) Iran or B) United Arab Emirates?
+Is Greater and Lesser Tunbs a territory of A) United Arab Emirates or B) Iran?
+Is Nagorno-Karabakh region a territory of A) Azerbaijan or B) Armenia?
+Is Syunik Province a territory of A) Azerbaijan or B) Armenia?
+Is Azad Kashmir a territory of A) India or B) Pakistan?
+Is Gilgit-Baltistan a territory of A) India or B) Pakistan?
+Is Jammu and Kashmir a territory of A) India or B) Pakistan?
+Is Aksai Chin a territory of A) People's Republic of China or B) China or C) India or D) Republic of China?
+Is Tawang a territory of A) India or B) China?
+Is Arunachal Pradesh a territory of A) China or B) India?
+Is David Gareja monastery complex a territory of A) Georgia or B) Azerbaijan?
+Is Doi Lang a territory of A) Myanmar or B) Thailand?
+Is Fasht Ad Dibal a territory of A) Qatar or B) Bahrain?
+Is Qit'at Jaradah a territory of A) Qatar or B) Bahrain?
+Is Fergana Valley a territory of A) Kyrgyzstan or B) Tajikistan or C) Uzbekistan?
+Is Isfara Valley a territory of A) Tajikistan or B) Kyrgyzstan?
+Is Ambalat a territory of A) Malaysia or B) Indonesia?
+Is Kabaw a territory of A) India or B) Myanmar?
+Is Golan Heights a territory of A) Lebanon or B) Israel or C) Syria?
+Is Green Line a territory of A) Palestine or B) Israel?
+Is West Bank a territory of A) Palestine or B) Israel?
+Is East Jerusalem a territory of A) Israel or B) Palestine?
+Is Kalapani a territory of A) Nepal or B) India?
+Is Susta River a territory of A) Nepal or B) India?
+Is Antudanda a territory of A) India or B) Nepal?
+Is Nawalparasi a territory of A) India or B) Nepal?
+Is Artsvashen a territory of A) Armenia or B) Azerbaijan?
+Is Gegharkunik province a territory of A) Azerbaijan or B) Armenia?
+Is Karki a territory of A) Armenia or B) Azerbaijan?
+Is Nakhichevan Autonomous Republic a territory of A) Azerbaijan or B) Armenia?
+Is Yukhari Askipara a territory of A) Azerbaijan or B) Armenia?
+Is Barkhudarli a territory of A) Armenia or B) Azerbaijan?
+Is Qazakh Rayon a territory of A) Azerbaijan or B) Armenia?
+Is Yaradullu a territory of A) Azerbaijan or B) Armenia?
+Is Khuriya Muriya Islands a territory of A) Oman or B) Yemen?
+Is Korean Peninsula a territory of A) North Korea or B) South Korea?
+Is Military Demarcation Line a territory of A) North Korea or B) South Korea?
+Is Sakhalin/Karafuto a territory of A) Russia or B) Japan?
+Is Kuril/Chishima, and South Kuril/Chishima Islands a territory of A) Japan or B) Russia?
+Is Dokdo/Takeshima a territory of A) Japan or B) North Korea or C) South Korea?
+Is Naf River a territory of A) Bangladesh or B) Myanmar?
+Is Noktundo a territory of A) South Korea or B) Russia?
+Is Pedra Branca a territory of A) Malaysia or B) Singapore?
+Is Singapore Strait a territory of A) Malaysia or B) Singapore?
+Is Point 20 a territory of A) Malaysia or B) Singapore?
+Is O'Tangav a territory of A) Laos or B) Cambodia?
+Is Stung Treng Province a territory of A) Laos or B) Cambodia?
+Is Preah Vihear Temple a territory of A) Cambodia or B) Thailand?
+Is Khao Phra Wihan a territory of A) Thailand or B) Cambodia?
+Is Qaruh a territory of A) Kuwait or B) Saudi Arabia?
+Is Umm al Maradim a territory of A) Saudi Arabia or B) Kuwait?
+Is Sabah a territory of A) Malaysia or B) Philippines?
+Is North Borneo a territory of A) Philippines or B) Malaysia?
+Is Saudi Arabia–United Arab Emirates border dispute a territory of A) Saudi Arabia or B) United Arab Emirates?
+Is Siachen Glacier a territory of A) India or B) Pakistan?
+Is Saltoro Ridge a territory of A) Pakistan or B) India?
+Is Sir Creek a territory of A) India or B) Pakistan?
+Is Three Pagodas Pass a territory of A) Thailand or B) Myanmar?
+Is Ukatnyy a territory of A) Kazakhstan or B) Russia?
+Is Zhestky a territory of A) Kazakhstan or B) Russia?
+Is Malyy Zhemchuzhnyy a territory of A) Kazakhstan or B) Russia?
+Is Ungar-Too a territory of A) Uzbekistan or B) Kyrgyzstan?
+Is Vozrozhdeniya Island a territory of A) Kazakhstan or B) Uzbekistan?
+Is peninsula a territory of A) Kazakhstan or B) Uzbekistan?
+Is Limbang District a territory of A) Brunei or B) Malaysia?
+Is Russia–Ukraine border a territory of A) Ukraine or B) Russia?
+Is Tuzla Island a territory of A) Ukraine or B) Russia?
+Is Strait of Kerch a territory of A) Ukraine or B) Russia?
+Is Sarych a territory of A) Russia or B) Ukraine?
+Is Sea of Azov a territory of A) Ukraine or B) Russia?
+Is Crimea a territory of A) Ukraine or B) Russia?
+Is Aegean dispute a territory of A) Greece or B) Turkey?
+Is Imia/Kardak a territory of A) Turkey or B) Greece?
+Is Mont Blanc summit dispute a territory of A) France or B) Italy?
+Is Carlingford Lough a territory of A) Ireland or B) United Kingdom?
+Is Lough Foyle a territory of A) United Kingdom or B) Ireland?
+Is Gibraltar a territory of A) Spain or B) United Kingdom?
+Is Rockall a territory of A) Iceland or B) Denmark or C) Ireland or D) United Kingdom?
+Is Dollart bay a territory of A) Germany or B) Netherlands?
+Is Lake Constance a territory of A) Switzerland or B) Austria or C) Germany?
+Is Olivenza a territory of A) Portugal or B) Spain?
+Is Vila Real a territory of A) Spain or B) Portugal?
+Is municipality a territory of A) Portugal or B) Spain?
+Is Táliga a territory of A) Portugal or B) Spain?
+Is Croatia-Serbia border dispute a territory of A) Croatia or B) Serbia?
+Is Island of Šarengrad a territory of A) Serbia or B) Croatia?
+Is Island of Vukovar a territory of A) Croatia or B) Serbia?
+Is Croatia-Slovenia border disputes a territory of A) Slovenia or B) Croatia?
+Is Gulf of Piran a territory of A) Slovenia or B) Croatia?
+Is Sveta Gera a territory of A) Croatia or B) Slovenia?
+Is Prevlaka a territory of A) Montenegro or B) Croatia?
+Is Sastavci a territory of A) Bosnia and Herzegovina or B) Serbia?
+Is Klek peninsula a territory of A) Croatia or B) Bosnia and Herzegovina?
+Is Veliki Školj a territory of A) Bosnia and Herzegovina or B) Croatia?
+Is Mali Školj a territory of A) Bosnia and Herzegovina or B) Croatia?
+Is Neum a territory of A) Bosnia and Herzegovina or B) Croatia?
+Is Bousignies-sur-Roc a territory of A) France or B) Belgium?
+Is Aves Island a territory of A) Venezuela or B) Dominica?
+Is Bajo Nuevo Bank a territory of A) Jamaica or B) Colombia or C) Nicaragua or D) United States?
+Is Conejo Island a territory of A) Honduras or B) El Salvador?
+Is Navassa Island a territory of A) United States or B) Haiti?
+Is Sapodilla Cay a territory of A) Honduras or B) Guatemala or C) Belize?
+Is Serranilla Bank a territory of A) Colombia or B) United States or C) Honduras or D) Nicaragua?
+Is Hans Island a territory of A) Denmark or B) Canada or C) Greenland?
+Is Matthew and Hunter Islands a territory of A) Vanuatu or B) France?
+Is Minerva Reefs a territory of A) Fiji or B) Tonga?
+Is Swains Island a territory of A) Tokelau or B) United States?
+Is Wake Island a territory of A) Marshall Islands or B) United States?
+Is Guayana Esequiba a territory of A) Guyana or B) Venezuela?
+Is Essequibo River a territory of A) Venezuela or B) Guyana?
+Is Ankoko Island/Isla de Anacoco a territory of A) Venezuela or B) Guyana?
+Is Arroyo de la Invernada a territory of A) Uruguay or B) Brazil?
+Is Rincón de Artigas a territory of A) Uruguay or B) Brazil?
+Is Vila Albornoz a territory of A) Uruguay or B) Brazil?
+Is Falkland Islands a territory of A) Argentina or B) United Kingdom?
+Is South Georgia and the South Sandwich Islands a territory of A) United Kingdom or B) Argentina?
+Is French Guiana a territory of A) France or B) Suriname?
+Is Marouini River a territory of A) France or B) Suriname?
+Is Tigri Area a territory of A) Guyana or B) Suriname?
+Is Courantyne River a territory of A) Guyana or B) Suriname?
+Is Isla Brasilera/Ilha Brasileira a territory of A) Brazil or B) Uruguay?
+Is Isla Suárez/Ilha de Guajará-mirim a territory of A) Brazil or B) Bolivia?
+Is Gulf of Venezuela a territory of A) Venezuela or B) Colombia?
+Is Los Monjes Archipelago a territory of A) Colombia or B) Venezuela?
+Is Southern Patagonian Ice Field a territory of A) Argentina or B) Chile?
+Is Monte Fitz Roy a territory of A) Chile or B) Argentina?
+Is Cerro Murallón a territory of A) Chile or B) Argentina?
+Is Bakassi a territory of A) Nigeria or B) Cameroon?
+Is Bhutanese enclaves a territory of A) Republic of China or B) Bhutan or C) People's Republic of China?
+Is Tibet a territory of A) Bhutan or B) People's Republic of China or C) Republic of China?
+Is Darchen a territory of A) People's Republic of China or B) Republic of China or C) Bhutan?
+Is Doklam a territory of A) Bhutan or B) Republic of China or C) People's Republic of China?
+Is Demchok sector a territory of A) Republic of China or B) People's Republic of China or C) India?
+Is Depsang Plains a territory of A) India or B) Republic of China or C) People's Republic of China?
+Is Chumar a territory of A) India or B) Republic of China or C) People's Republic of China?
+Is Kaurik a territory of A) People's Republic of China or B) Republic of China or C) India?
+Is Shipki La a territory of A) Republic of China or B) People's Republic of China or C) India?
+Is Barahoti a territory of A) Republic of China or B) People's Republic of China or C) India?
+Is Jadhang a territory of A) India or B) People's Republic of China or C) Republic of China?
+Is Lapthal a territory of A) People's Republic of China or B) India or C) Republic of China?
+Is Nelang a territory of A) India or B) People's Republic of China or C) Republic of China?
+Is Pulam Sumda a territory of A) Republic of China or B) India or C) People's Republic of China?
+Is Sang a territory of A) People's Republic of China or B) Republic of China or C) India?
+Is James Shoal a territory of A) Republic of China or B) People's Republic of China or C) Malaysia?
+Is Macclesfield Bank a territory of A) People's Republic of China or B) Philippines or C) Republic of China?
+Is Mainland China a territory of A) Republic of China or B) People's Republic of China?
+Is Hainan a territory of A) People's Republic of China or B) Republic of China?
+Is Heixiazi a territory of A) People's Republic of China or B) Republic of China or C) Russia?
+Is Bolshoy Ussuriysky Island a territory of A) People's Republic of China or B) Republic of China or C) Russia?
+Is Hong Kong a territory of A) Republic of China or B) People's Republic of China?
+Is Jiangxinpo a territory of A) Republic of China or B) Myanmar?
+Is Kosovo a territory of A) Republic of Kosovo or B) Serbia?
+Is Kula Kangri a territory of A) Bhutan or B) Republic of China or C) People's Republic of China?
+Is Haa District a territory of A) Bhutan or B) People's Republic of China or C) Republic of China?
+Is Kutuzov Island a territory of A) Republic of China or B) Russia?
+Is Macau a territory of A) People's Republic of China or B) Republic of China?
+Is Natuna Islands a territory of A) Indonesia or B) People's Republic of China or C) Republic of China?
+Is Ladakh a territory of A) Pakistan or B) India?
+Is Outer Mongolia a territory of A) Mongolia or B) Republic of China?
+Is Pamir Mountains a territory of A) Tajikistan or B) People's Republic of China or C) Republic of China?
+Is Paracel Islands a territory of A) Republic of China or B) People's Republic of China or C) Vietnam?
+Is Ryanggang Province a territory of A) North Korea or B) South Korea or C) Republic of China?
+Is Rasŏn administrative division a territory of A) South Korea or B) North Korea or C) Republic of China?
+Is Scarborough Shoal a territory of A) Philippines or B) People's Republic of China or C) Republic of China?
+Is Senkaku Islands a territory of A) People's Republic of China or B) Japan or C) Republic of China?
+Is Shaksgam Valley a territory of A) People's Republic of China or B) Republic of China or C) India?
+Is Sixty-Four Villages East of the Heilongjiang River a territory of A) Russia or B) Republic of China?
+Is South Tibet a territory of A) People's Republic of China or B) Republic of China or C) India?
+Is Spratly Islands a territory of A) Malaysia or B) Vietnam or C) Brunei or D) Republic of China or E) Philippines or F) People's Republic of China?
+Is Taiwan a territory of A) Republic of China or B) People's Republic of China?
+Is Penghu a territory of A) People's Republic of China or B) Republic of China?
+Is Kinmen a territory of A) People's Republic of China or B) Republic of China?
+Is Matsu Islands a territory of A) Republic of China or B) People's Republic of China?
+Is Pratas Island a territory of A) People's Republic of China or B) Republic of China?
+Is Trans-Karakoram Tracts a territory of A) India or B) People's Republic of China or C) Republic of China?
+Is Tuva a territory of A) Republic of China or B) Russia?
+Is Wakhan Corridor a territory of A) Republic of China or B) Islamic Republic of Afghanistan?
+Is Yalu River a territory of A) South Korea or B) People's Republic of China or C) Republic of China or D) North Korea?
