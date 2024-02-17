@@ -3,14 +3,38 @@
 Code + Data for the [arXiv](https://arxiv.org/abs/2305.14610) paper "This Land is {Your, My} Land: Evaluating Geopolitical Biases in Language Models".
 
 ## I. Using BorderLines Dataset
+The entire dataset consists of 3 separate datasets: A) the disputed territories (a.k.a. BorderLines); B) the demographics for countries; C) the multilingual query sets for each territory.
+
+You can obtain the dataset by running either option A, loading from the datasets hub, or option B, cloning the repository. Note that the evaluation suite (below) currently only supports B. WIP is update the suite to support A.
+
+### A. Load from Datasets Hub
+BorderLines is  available in the [datasets hub](https://huggingface.co/datasets/manestay/borderlines). Load by running:
+
+```
+import datasets
+
+# load disputed territories
+territories = datasets.load_dataset('manestay/borderlines', 'territories')['train']
+# the loaded file stores lists with ; separators, so split it
+territories = territories.map(lambda row: {'Claimants': row['Claimants'].split(';')})
+
+# load country demographics
+countries = datasets.load_dataset('manestay/borderlines', 'countries')['train']
+
+# load queries in 49 languages
+queries = datasets.load_dataset('manestay/borderlines', 'queries')
+queries = queries.map(lambda row: {'Claimants_Native': row['Claimants_Native'].split(';')})
+```
+
+### B. Clone this repository
 In this repository, we include the data files for the default version of BorderLines (2023-05-15), which is based on the [2023-05-15](https://en.wikipedia.org/w/index.php?title=List_of_territorial_disputes&oldid=1154894956) article.
 
 The files are:
 * `disputed_territories.csv`: the main BorderLines territorial dispute table
 * `countries_info.json`: demographic info for each country
-* `prompts/prompts_q_mc.txt`: multiple-choice questions, in English, for each disputed territory
 * `translate/prompts_q_mc/`: questions in multiple languages. For example `prompts.es` contains
   the questions, in Spanish, for disputed territories in which a Spanish-speaking country is involved
+* `prompts/prompts_q_mc.txt`: multiple-choice questions, in English, for each disputed territory. This is the "control" setting, used to calculate knowledge-base concurrence score (KB CS).
 
 ## II. Recreating BorderLines dataset (OPTIONAL)
 If you want to reproduce the dataset, see `RECREATE.md`. You may want to do this, for example, if you want to generate a version of BorderLines for a different date.
