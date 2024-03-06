@@ -39,10 +39,6 @@ if __name__ == "__main__":
         code = fname.suffixes[0].lstrip('.')
 
         code_orig = code
-        # if code == 'zh-CN':
-        #     code = 'zh'
-        # elif code == 'iw':
-        #     code = 'he'
 
         fname_line = fname.parent / f'line_inds.{code}.txt'
         out_path = args.out_dir / f'prompts.{code}'

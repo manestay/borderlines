@@ -29,6 +29,8 @@ def get_religion_pop(country):
     # manual fixes
     if co == 'Eswatini':
         co = 'Swaziland'
+    elif 'Afghanistan' in co:
+        return 'Islam', 26023100
     elif co == 'Myanmar':
         return 'Buddhism', 53800000
     elif co == 'Montenegro':
@@ -59,7 +61,12 @@ def get_religion_pop(country):
         religion = 'Atheism'
     elif co == 'Japan':
         religion = 'Shintoism'
-    assert religion and isinstance(population, int)
+    if 'available' in religion:
+        print(f'WARNING: religion not found for {country}')
+        religion = ''
+    if not isinstance(population, int):
+        print(f'WARNING: population not found for {country}')
+        population = 0
     return religion, population
 
 
@@ -104,8 +111,12 @@ def get_countries_info(countries):
         lang_name_native = locale.get_language_name()
 
         if country == 'Republic of China':
-            l_code = 'zh-TW'
-        if l_code == 'sr_Latn':
+            l_code = 'zht'
+        elif 'China' in country:
+            l_code = 'zhs'
+        elif country == 'Israel':
+            l_code = 'iw'
+        elif l_code == 'sr_Latn':
             l_code = 'sr'
 
         # this library is very slow since is loads an entire JSON
@@ -113,22 +124,22 @@ def get_countries_info(countries):
         religion, population = get_religion_pop(country_orig)
 
         info[country_orig] = {
-            'code': l_code,
-            'name': lang_name,
-            'name_native': lang_name_native,
-            'religion': religion,
-            'population': population
+            'Lang_Code': l_code,
+            'Lang_Name': lang_name,
+            'Lang_Name_Native': lang_name_native,
+            'Religion': religion,
+            'Population': population
         }
      # manual fixes
     info['Haiti'] = {
-        'code': 'ht',
-        'name': 'Haitian Creole',
-        'name_native': 'Kreyòl'
+        'Lang_Code': 'ht',
+        'Lang_Name': 'Haitian Creole',
+        'Lang_Name_Native': 'Kreyòl'
     }
     info['Republic of Kosovo'] = {
-        'code': 'sq',
-        'name': 'Albanian',
-        'name_native': 'Shqipja'
+        'Lang_Code': 'sq',
+        'Lang_Name': 'Albanian',
+        'Lang_Name_Native': 'Shqipja'
     }
 
     info = OrderedDict(sorted(info.items()))

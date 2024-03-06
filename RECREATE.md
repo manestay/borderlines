@@ -19,8 +19,8 @@ For this section, you need to setup [Google Cloud credentials](https://developer
 
 We use a templated translation method, in which we write an English sentence for terrorital disputes, abstracting named entities with XX, YY, ZZ. For each language, we translate the sentence to it only once, and also translate the relevant entities. Then we replace the abstractions with the entities.
 
-#### A. Translate templated sentence
-(this step should be **skipped** since `templates_q.csv` is included in this repo)
+#### A. Translate templated sentence (skip!)
+(You can **skip this step** since `templates_q.csv` is included in this repo)
 Translate the templated sentence (`TEMP` in `lib.py`) from English to all supported languages using GT:
 ```
 python translate_template.py -m cloud
@@ -39,8 +39,14 @@ python translate_folder.py translate_2021-08/terms -m cloud
 ```
 
 #### C. Translate
-The last step is to insert the entities into the templates, for each language:
+Next, insert the entities into the templates, for each language:
 ```
 python get_multiling_prompts.py translate_2021-08/terms translate_2021-08/prompts_mc_q -t disputed_territories_2021-08.csv
 ```
-The version of the Borderlines dataset for your chosen article date (2023-08-31 if you used the above commands) is saved to `project1/translate_2021-08/prompts_mc_q/prompts.{lang_code}`.
+The version of the Borderlines dataset for your chosen article date (2023-08-31 if you used the above commands) is saved to `translate_2021-08/prompts_mc_q/prompts.{lang_code}`.
+
+### 4. Create dataset objects
+Finally, save the BorderLines dataset you created in the HuggingFace datasets format.
+```
+python scripts/borderlines_to_datasets_format.py -o datasets/2021-08 -p prompts_2021-08/prompts_q_mc.txt -td translate_2021-08/terms -tp disputed_territories_2021-08.csv -ip countries_info_2021-08.json -pd translate_2021-08/prompts_mc_q
+```

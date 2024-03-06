@@ -107,8 +107,8 @@ if __name__ == "__main__":
                     controller = 'Unknown'
 
                 claimants = [x.text for x in claimants]
-            else:  # diff formatting in 'Europe' table
-                claimants, controller, region = prev[1:4]
+            else:  # HACK: handle rowspan = 2 (breaks if rowspan > 2)
+                claimants, controller = prev[1:3]
 
             for terr, link in zip(territories, links):
                 if not terr[0].isalpha():  # ensure not citation
@@ -118,6 +118,9 @@ if __name__ == "__main__":
                 if terr in claimants:
                     continue
                 if terr in set(['peninsula', 'municipality', 'Tibet', 'Croatia']):
+                    # invalid territories (Wikipedia sublinks in a cell)
+                    continue
+                if 'border' in terr or 'dispute' in terr:
                     continue
 
                 if terr in records: # handle duplicate territories
@@ -125,7 +128,7 @@ if __name__ == "__main__":
                     if controller != records[terr][2]:
                         controller = 'Unknown'
 
-                print(f'Processing {terr}' + ' ' * 30, end='\r')
+                print(f'Processing {terr}' + ' ' * 40, end='\r')
 
                 link = urljoin(site_url, link)
                 response_territory = requests.get(link)

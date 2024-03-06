@@ -1,627 +1,866 @@
 {
   "Argentina": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 42669500
   },
   "Armenia": {
-    "code": "hy",
-    "name": "Armenian",
-    "name_native": "հայերեն"
+    "Lang_Code": "hy",
+    "Lang_Name": "Armenian",
+    "Lang_Name_Native": "հայերեն",
+    "Religion": "Christianity",
+    "Population": 3009800
   },
   "Australia": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 25690000
   },
   "Austria": {
-    "code": "de",
-    "name": "German",
-    "name_native": "Deutsch"
+    "Lang_Code": "de",
+    "Lang_Name": "German",
+    "Lang_Name_Native": "Deutsch",
+    "Religion": "Christianity",
+    "Population": 8527230
   },
   "Azerbaijan": {
-    "code": "az",
-    "name": "Azerbaijani",
-    "name_native": "azərbaycan"
+    "Lang_Code": "az",
+    "Lang_Name": "Azerbaijani",
+    "Lang_Name_Native": "azərbaycan",
+    "Religion": "Islam",
+    "Population": 9552500
   },
   "Bahrain": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 1316500
   },
   "Bangladesh": {
-    "code": "bn",
-    "name": "Bangla",
-    "name_native": "বাংলা"
+    "Lang_Code": "bn",
+    "Lang_Name": "Bangla",
+    "Lang_Name_Native": "বাংলা",
+    "Religion": "Islam",
+    "Population": 157486000
   },
   "Belgium": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 11225469
   },
   "Belize": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 349728
   },
   "Benin": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Christianity",
+    "Population": 9988068
   },
   "Bhutan": {
-    "code": "dz",
-    "name": "Dzongkha",
-    "name_native": "རྫོང་ཁ"
+    "Lang_Code": "dz",
+    "Lang_Name": "Dzongkha",
+    "Lang_Name_Native": "རྫོང་ཁ",
+    "Religion": "Buddhism",
+    "Population": 755030
   },
   "Bolivia": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 10027254
   },
   "Bosnia and Herzegovina": {
-    "code": "bs",
-    "name": "Bosnian",
-    "name_native": "bosanski"
+    "Lang_Code": "bs",
+    "Lang_Name": "Bosnian",
+    "Lang_Name_Native": "bosanski",
+    "Religion": "Christianity",
+    "Population": 3791622
   },
   "Brazil": {
-    "code": "pt",
-    "name": "Portuguese",
-    "name_native": "português"
+    "Lang_Code": "pt",
+    "Lang_Name": "Portuguese",
+    "Lang_Name_Native": "português",
+    "Religion": "Christianity",
+    "Population": 203586000
   },
   "Brunei": {
-    "code": "ms",
-    "name": "Malay",
-    "name_native": "Melayu"
+    "Lang_Code": "ms",
+    "Lang_Name": "Malay",
+    "Lang_Name_Native": "Melayu",
+    "Religion": "Islam",
+    "Population": 393372
   },
   "Burkina Faso": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Islam",
+    "Population": 17322796
   },
   "Cambodia": {
-    "code": "km",
-    "name": "Khmer",
-    "name_native": "ខ្មែរ"
+    "Lang_Code": "km",
+    "Lang_Name": "Khmer",
+    "Lang_Name_Native": "ខ្មែរ",
+    "Religion": "Buddhism",
+    "Population": 15184116
   },
   "Cameroon": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Christianity",
+    "Population": 20386799
   },
   "Canada": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 35540419
   },
   "Chile": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 17819054
   },
   "China": {
-    "code": "zh",
-    "name": "Chinese",
-    "name_native": "中文"
+    "Lang_Code": "zhs",
+    "Lang_Name": "Chinese",
+    "Lang_Name_Native": "中文",
+    "Religion": "Unaffiliated Religions",
+    "Population": 1367110000
   },
   "Colombia": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 47907800
   },
   "Comoros": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 763952
   },
   "Croatia": {
-    "code": "hr",
-    "name": "Croatian",
-    "name_native": "hrvatski"
+    "Lang_Code": "hr",
+    "Lang_Name": "Croatian",
+    "Lang_Name_Native": "hrvatski",
+    "Religion": "Christianity",
+    "Population": 4267558
   },
   "Cyprus": {
-    "code": "el",
-    "name": "Greek",
-    "name_native": "Ελληνικά"
+    "Lang_Code": "el",
+    "Lang_Name": "Greek",
+    "Lang_Name_Native": "Ελληνικά",
+    "Religion": "Christianity",
+    "Population": 858000
   },
   "Democratic Republic of Congo": {
-    "code": "sw",
-    "name": "Swahili",
-    "name_native": "Kiswahili"
+    "Lang_Code": "sw",
+    "Lang_Name": "Swahili",
+    "Lang_Name_Native": "Kiswahili",
+    "Religion": "Christianity",
+    "Population": 95890000
   },
   "Denmark": {
-    "code": "da",
-    "name": "Danish",
-    "name_native": "dansk"
+    "Lang_Code": "da",
+    "Lang_Name": "Danish",
+    "Lang_Name_Native": "dansk",
+    "Religion": "Christianity",
+    "Population": 5655750
   },
   "Djibouti": {
-    "code": "so",
-    "name": "Somali",
-    "name_native": "Soomaali"
+    "Lang_Code": "so",
+    "Lang_Name": "Somali",
+    "Lang_Name_Native": "Soomaali",
+    "Religion": "Islam",
+    "Population": 886000
   },
   "Dominica": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 71293
   },
   "Egypt": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 87668100
   },
   "El Salvador": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 6401240
   },
   "Equatorial Guinea": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 1430000
   },
   "Eritrea": {
-    "code": "ti",
-    "name": "Tigrinya",
-    "name_native": "ትግርኛ"
+    "Lang_Code": "ti",
+    "Lang_Name": "Tigrinya",
+    "Lang_Name_Native": "ትግርኛ",
+    "Religion": "Christianity",
+    "Population": 6536000
   },
   "Eswatini": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 1106189
   },
   "Fiji": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 859178
   },
   "France": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Christianity",
+    "Population": 66078000
   },
   "Gabon": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Christianity",
+    "Population": 2341000
   },
   "Georgia": {
-    "code": "ka",
-    "name": "Georgian",
-    "name_native": "ქართული"
+    "Lang_Code": "ka",
+    "Lang_Name": "Georgian",
+    "Lang_Name_Native": "ქართული",
+    "Religion": "Christianity",
+    "Population": 4490500
   },
   "Germany": {
-    "code": "de",
-    "name": "German",
-    "name_native": "Deutsch"
+    "Lang_Code": "de",
+    "Lang_Name": "German",
+    "Lang_Name_Native": "Deutsch",
+    "Religion": "Christianity",
+    "Population": 80783000
   },
   "Greece": {
-    "code": "el",
-    "name": "Greek",
-    "name_native": "Ελληνικά"
+    "Lang_Code": "el",
+    "Lang_Name": "Greek",
+    "Lang_Name_Native": "Ελληνικά",
+    "Religion": "Christianity",
+    "Population": 1064000
   },
   "Greenland": {
-    "code": "kl",
-    "name": "Kalaallisut",
-    "name_native": "kalaallisut"
+    "Lang_Code": "kl",
+    "Lang_Name": "Kalaallisut",
+    "Lang_Name_Native": "kalaallisut",
+    "Religion": "Christianity",
+    "Population": 56295
   },
   "Guatemala": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 15806675
   },
   "Guinea": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Islam",
+    "Population": 10628972
   },
   "Guyana": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Islam",
+    "Population": 784894
   },
   "Haiti": {
-    "code": "ht",
-    "name": "Haitian Creole",
-    "name_native": "Kreyòl"
+    "Lang_Code": "ht",
+    "Lang_Name": "Haitian Creole",
+    "Lang_Name_Native": "Kreyòl"
   },
   "Honduras": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 8725111
   },
   "Iceland": {
-    "code": "is",
-    "name": "Icelandic",
-    "name_native": "íslenska"
+    "Lang_Code": "is",
+    "Lang_Name": "Icelandic",
+    "Lang_Name_Native": "íslenska",
+    "Religion": "Christianity",
+    "Population": 328170
   },
   "India": {
-    "code": "hi",
-    "name": "Hindi",
-    "name_native": "हिन्दी"
+    "Lang_Code": "hi",
+    "Lang_Name": "Hindi",
+    "Lang_Name_Native": "हिन्दी",
+    "Religion": "Hinduism",
+    "Population": 1263930000
   },
   "Indonesia": {
-    "code": "id",
-    "name": "Indonesian",
-    "name_native": "Indonesia"
+    "Lang_Code": "id",
+    "Lang_Name": "Indonesian",
+    "Lang_Name_Native": "Indonesia",
+    "Religion": "Islam",
+    "Population": 252164800
   },
   "Iran": {
-    "code": "fa",
-    "name": "Persian",
-    "name_native": "فارسی"
+    "Lang_Code": "fa",
+    "Lang_Name": "Persian",
+    "Lang_Name_Native": "فارسی",
+    "Religion": "Islam",
+    "Population": 77966400
   },
   "Iraq": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 36004552
   },
   "Ireland": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 6378000
   },
   "Islamic Republic of Afghanistan": {
-    "code": "fa",
-    "name": "Persian",
-    "name_native": "فارسی"
+    "Lang_Code": "fa",
+    "Lang_Name": "Persian",
+    "Lang_Name_Native": "فارسی",
+    "Religion": "Islam",
+    "Population": 26023100
   },
   "Israel": {
-    "code": "he",
-    "name": "Hebrew",
-    "name_native": "עברית"
-  },
-  "Italy": {
-    "code": "it",
-    "name": "Italian",
-    "name_native": "italiano"
+    "Lang_Code": "iw",
+    "Lang_Name": "Hebrew",
+    "Lang_Name_Native": "עברית",
+    "Religion": "Judaism",
+    "Population": 8268400
   },
   "Ivory Coast": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Islam",
+    "Population": 23821000
   },
   "Jamaica": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 2717991
   },
   "Japan": {
-    "code": "ja",
-    "name": "Japanese",
-    "name_native": "日本語"
+    "Lang_Code": "ja",
+    "Lang_Name": "Japanese",
+    "Lang_Name_Native": "日本語",
+    "Religion": "Shintoism",
+    "Population": 127080000
   },
   "Kazakhstan": {
-    "code": "ru",
-    "name": "Russian",
-    "name_native": "русский"
+    "Lang_Code": "ru",
+    "Lang_Name": "Russian",
+    "Lang_Name_Native": "русский",
+    "Religion": "Islam",
+    "Population": 17377800
   },
   "Kenya": {
-    "code": "sw",
-    "name": "Swahili",
-    "name_native": "Kiswahili"
+    "Lang_Code": "sw",
+    "Lang_Name": "Swahili",
+    "Lang_Name_Native": "Kiswahili",
+    "Religion": "Christianity",
+    "Population": 41800000
   },
   "Kuwait": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 3268431
   },
   "Kyrgyzstan": {
-    "code": "ky",
-    "name": "Kyrgyz",
-    "name_native": "кыргызча"
+    "Lang_Code": "ky",
+    "Lang_Name": "Kyrgyz",
+    "Lang_Name_Native": "кыргызча",
+    "Religion": "Islam",
+    "Population": 5776570
   },
   "Laos": {
-    "code": "lo",
-    "name": "Lao",
-    "name_native": "ລາວ"
+    "Lang_Code": "lo",
+    "Lang_Name": "Lao",
+    "Lang_Name_Native": "ລາວ",
+    "Religion": "Buddhism",
+    "Population": 6693300
   },
   "Lebanon": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 4104000
   },
   "Madagascar": {
-    "code": "mg",
-    "name": "Malagasy",
-    "name_native": "Malagasy"
+    "Lang_Code": "mg",
+    "Lang_Name": "Malagasy",
+    "Lang_Name_Native": "Malagasy",
+    "Religion": "Christianity",
+    "Population": 21842167
   },
   "Malawi": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 15805239
   },
   "Malaysia": {
-    "code": "ms",
-    "name": "Malay",
-    "name_native": "Melayu"
+    "Lang_Code": "ms",
+    "Lang_Name": "Malay",
+    "Lang_Name_Native": "Melayu",
+    "Religion": "Islam",
+    "Population": 30430500
   },
   "Maldives": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Islam",
+    "Population": 341256
   },
   "Marshall Islands": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 56086
   },
   "Mauritius": {
-    "code": "mfe",
-    "name": "Morisyen",
-    "name_native": "kreol morisien"
+    "Lang_Code": "mfe",
+    "Lang_Name": "Morisyen",
+    "Lang_Name_Native": "kreol morisien",
+    "Religion": "Hinduism",
+    "Population": 1261208
   },
   "Moldova": {
-    "code": "ro",
-    "name": "Romanian",
-    "name_native": "română"
+    "Lang_Code": "ro",
+    "Lang_Name": "Romanian",
+    "Lang_Name_Native": "română",
+    "Religion": "Islam",
+    "Population": 3557600
   },
   "Mongolia": {
-    "code": "mn",
-    "name": "Mongolian",
-    "name_native": "монгол"
+    "Lang_Code": "mn",
+    "Lang_Name": "Mongolian",
+    "Lang_Name_Native": "монгол",
+    "Religion": "Christianity",
+    "Population": 2987733
   },
   "Montenegro": {
-    "code": "sr",
-    "name": "Serbian",
-    "name_native": "srpski"
+    "Lang_Code": "sr",
+    "Lang_Name": "Serbian",
+    "Lang_Name_Native": "srpski",
+    "Religion": "Christianity",
+    "Population": 619211
   },
   "Morocco": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Christianity",
+    "Population": 33465000
   },
   "Myanmar": {
-    "code": "my",
-    "name": "Burmese",
-    "name_native": "မြန်မာ"
+    "Lang_Code": "my",
+    "Lang_Name": "Burmese",
+    "Lang_Name_Native": "မြန်မာ",
+    "Religion": "Buddhism",
+    "Population": 53800000
   },
   "Namibia": {
-    "code": "af",
-    "name": "Afrikaans",
-    "name_native": "Afrikaans"
+    "Lang_Code": "af",
+    "Lang_Name": "Afrikaans",
+    "Lang_Name_Native": "Afrikaans",
+    "Religion": "Christianity",
+    "Population": 2113077
   },
   "Nepal": {
-    "code": "ne",
-    "name": "Nepali",
-    "name_native": "नेपाली"
+    "Lang_Code": "ne",
+    "Lang_Name": "Nepali",
+    "Lang_Name_Native": "नेपाली",
+    "Religion": "Hinduism",
+    "Population": 27646053
   },
   "Netherlands": {
-    "code": "nl",
-    "name": "Dutch",
-    "name_native": "Nederlands"
+    "Lang_Code": "nl",
+    "Lang_Name": "Dutch",
+    "Lang_Name_Native": "Nederlands",
+    "Religion": "Christianity",
+    "Population": 16881000
   },
   "Nicaragua": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 6134270
   },
   "Nigeria": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 178517000
   },
   "North Korea": {
-    "code": "ko",
-    "name": "Korean",
-    "name_native": "한국어"
+    "Lang_Code": "ko",
+    "Lang_Name": "Korean",
+    "Lang_Name_Native": "한국어",
+    "Religion": "Atheism",
+    "Population": 25027000
   },
   "Oman": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 4089076
   },
   "Pakistan": {
-    "code": "ur",
-    "name": "Urdu",
-    "name_native": "اردو"
+    "Lang_Code": "ur",
+    "Lang_Name": "Urdu",
+    "Lang_Name_Native": "اردو",
+    "Religion": "Islam",
+    "Population": 188410000
   },
   "Palestine": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 4923000
   },
   "People's Republic of China": {
-    "code": "zh",
-    "name": "Chinese",
-    "name_native": "中文"
+    "Lang_Code": "zhs",
+    "Lang_Name": "Chinese",
+    "Lang_Name_Native": "中文",
+    "Religion": "Atheism",
+    "Population": 1367110000
   },
   "Philippines": {
-    "code": "tl",
-    "name": "Filipino",
-    "name_native": "Filipino"
+    "Lang_Code": "tl",
+    "Lang_Name": "Filipino",
+    "Lang_Name_Native": "Filipino",
+    "Religion": "Christianity",
+    "Population": 100697400
   },
   "Portugal": {
-    "code": "pt",
-    "name": "Portuguese",
-    "name_native": "português"
+    "Lang_Code": "pt",
+    "Lang_Name": "Portuguese",
+    "Lang_Name_Native": "português",
+    "Religion": "Christianity",
+    "Population": 10477800
   },
   "Qatar": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 2269672
   },
   "Republic of China": {
-    "code": "zh-TW",
-    "name": "Chinese",
-    "name_native": "中文"
+    "Lang_Code": "zht",
+    "Lang_Name": "Chinese",
+    "Lang_Name_Native": "中文",
+    "Religion": "Buddhism",
+    "Population": 23424615
   },
   "Republic of Kosovo": {
-    "code": "sq",
-    "name": "Albanian",
-    "name_native": "Shqipja"
+    "Lang_Code": "sq",
+    "Lang_Name": "Albanian",
+    "Lang_Name_Native": "Shqipja"
   },
   "Republic of the Congo": {
-    "code": "fr",
-    "name": "French",
-    "name_native": "français"
+    "Lang_Code": "fr",
+    "Lang_Name": "French",
+    "Lang_Name_Native": "français",
+    "Religion": "Christianity",
+    "Population": 4559000
   },
   "Russia": {
-    "code": "ru",
-    "name": "Russian",
-    "name_native": "русский"
+    "Lang_Code": "ru",
+    "Lang_Name": "Russian",
+    "Lang_Name_Native": "русский",
+    "Religion": "Christianity",
+    "Population": 146233000
   },
   "Rwanda": {
-    "code": "rw",
-    "name": "Kinyarwanda",
-    "name_native": "Kinyarwanda"
+    "Lang_Code": "rw",
+    "Lang_Name": "Kinyarwanda",
+    "Lang_Name_Native": "Kinyarwanda",
+    "Religion": "Christianity",
+    "Population": 10996891
   },
   "Saudi Arabia": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 30770375
   },
   "Serbia": {
-    "code": "sr",
-    "name": "Serbian",
-    "name_native": "српски"
+    "Lang_Code": "sr",
+    "Lang_Name": "Serbian",
+    "Lang_Name_Native": "српски",
+    "Religion": "Christianity",
+    "Population": 7186862
   },
   "Singapore": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Buddhism",
+    "Population": 5469700
   },
   "Slovenia": {
-    "code": "sl",
-    "name": "Slovenian",
-    "name_native": "slovenščina"
+    "Lang_Code": "sl",
+    "Lang_Name": "Slovenian",
+    "Lang_Name_Native": "slovenščina",
+    "Religion": "Christianity",
+    "Population": 2064966
   },
   "Somalia": {
-    "code": "so",
-    "name": "Somali",
-    "name_native": "Soomaali"
+    "Lang_Code": "so",
+    "Lang_Name": "Somali",
+    "Lang_Name_Native": "Soomaali",
+    "Religion": "Islam",
+    "Population": 10806000
   },
   "South Africa": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 54002000
   },
   "South Korea": {
-    "code": "ko",
-    "name": "Korean",
-    "name_native": "한국어"
+    "Lang_Code": "ko",
+    "Lang_Name": "Korean",
+    "Lang_Name_Native": "한국어",
+    "Religion": "Atheism",
+    "Population": 50423955
   },
   "South Sudan": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 11384393
   },
   "Spain": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 46507760
   },
   "Sudan": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 37289406
   },
   "Suriname": {
-    "code": "nl",
-    "name": "Dutch",
-    "name_native": "Nederlands"
+    "Lang_Code": "nl",
+    "Lang_Name": "Dutch",
+    "Lang_Name_Native": "Nederlands",
+    "Religion": "Christianity",
+    "Population": 534189
   },
   "Switzerland": {
-    "code": "de",
-    "name": "German",
-    "name_native": "Deutsch"
+    "Lang_Code": "de",
+    "Lang_Name": "German",
+    "Lang_Name_Native": "Deutsch",
+    "Religion": "Christianity",
+    "Population": 8183800
   },
   "Syria": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 22964324
   },
   "Tajikistan": {
-    "code": "tg",
-    "name": "Tajik",
-    "name_native": "тоҷикӣ"
+    "Lang_Code": "tg",
+    "Lang_Name": "Tajik",
+    "Lang_Name_Native": "тоҷикӣ",
+    "Religion": "Islam",
+    "Population": 8161000
   },
   "Tanzania": {
-    "code": "sw",
-    "name": "Swahili",
-    "name_native": "Kiswahili"
+    "Lang_Code": "sw",
+    "Lang_Name": "Swahili",
+    "Lang_Name_Native": "Kiswahili",
+    "Religion": "Christianity",
+    "Population": 47421786
   },
   "Thailand": {
-    "code": "th",
-    "name": "Thai",
-    "name_native": "ไทย"
+    "Lang_Code": "th",
+    "Lang_Name": "Thai",
+    "Lang_Name_Native": "ไทย",
+    "Religion": "Buddhism",
+    "Population": 64871000
   },
   "Tokelau": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 1411
   },
   "Tonga": {
-    "code": "to",
-    "name": "Tongan",
-    "name_native": "lea fakatonga"
+    "Lang_Code": "to",
+    "Lang_Name": "Tongan",
+    "Lang_Name_Native": "lea fakatonga",
+    "Religion": "Christianity",
+    "Population": 103252
   },
   "Turkey": {
-    "code": "tr",
-    "name": "Turkish",
-    "name_native": "Türkçe"
+    "Lang_Code": "tr",
+    "Lang_Name": "Turkish",
+    "Lang_Name_Native": "Türkçe",
+    "Religion": "Islam",
+    "Population": 76667864
   },
   "Uganda": {
-    "code": "sw",
-    "name": "Swahili",
-    "name_native": "Kiswahili"
+    "Lang_Code": "sw",
+    "Lang_Name": "Swahili",
+    "Lang_Name_Native": "Kiswahili",
+    "Religion": "Christianity",
+    "Population": 34856813
   },
   "Ukraine": {
-    "code": "uk",
-    "name": "Ukrainian",
-    "name_native": "українська"
+    "Lang_Code": "uk",
+    "Lang_Name": "Ukrainian",
+    "Lang_Name_Native": "українська",
+    "Religion": "Christianity",
+    "Population": 42973696
   },
   "United Arab Emirates": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 9446000
   },
   "United Kingdom": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 64105654
   },
   "United States": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 319259000
   },
   "Uruguay": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 3404189
   },
   "Uzbekistan": {
-    "code": "uz",
-    "name": "Uzbek",
-    "name_native": "o‘zbek"
+    "Lang_Code": "uz",
+    "Lang_Name": "Uzbek",
+    "Lang_Name_Native": "o‘zbek",
+    "Religion": "Islam",
+    "Population": 30492800
   },
   "Vanuatu": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 264652
   },
   "Venezuela": {
-    "code": "es",
-    "name": "Spanish",
-    "name_native": "español"
+    "Lang_Code": "es",
+    "Lang_Name": "Spanish",
+    "Lang_Name_Native": "español",
+    "Religion": "Christianity",
+    "Population": 30206307
   },
   "Vietnam": {
-    "code": "vi",
-    "name": "Vietnamese",
-    "name_native": "Tiếng Việt"
+    "Lang_Code": "vi",
+    "Lang_Name": "Vietnamese",
+    "Lang_Name_Native": "Tiếng Việt",
+    "Religion": "Christianity",
+    "Population": 89708900
   },
   "Yemen": {
-    "code": "ar",
-    "name": "Arabic",
-    "name_native": "العربية"
+    "Lang_Code": "ar",
+    "Lang_Name": "Arabic",
+    "Lang_Name_Native": "العربية",
+    "Religion": "Islam",
+    "Population": 25956000
   },
   "Zambia": {
-    "code": "en",
-    "name": "English",
-    "name_native": "English"
+    "Lang_Code": "en",
+    "Lang_Name": "English",
+    "Lang_Name_Native": "English",
+    "Religion": "Christianity",
+    "Population": 15023315
   },
   "Zimbabwe": {
-    "code": "sn",
-    "name": "Shona",
-    "name_native": "chiShona"
+    "Lang_Code": "sn",
+    "Lang_Name": "Shona",
+    "Lang_Name_Native": "chiShona",
+    "Religion": "Christianity",
+    "Population": 13061239
   }
 }

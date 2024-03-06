@@ -1,228 +1,226 @@
-Territory,Claimants,Controller,Region
-Abyei,South Sudan;Sudan,Sudan,Africa
-Heglig,Sudan;South Sudan,Sudan,Africa
-Kafia Kingi,Sudan;South Sudan,Sudan,Africa
-Banc du Geyser,Madagascar;France;Comoros,Unknown,Africa
-Bassas da India,France;Madagascar,France,Africa
-Europa Island,Madagascar;France,France,Africa
-Juan de Nova Island,France;Madagascar,France,Africa
-Ceuta,Morocco;Spain,Spain,Africa
-Melilla,Spain;Morocco,Spain,Africa
-plazas de soberanía,Morocco;Spain,Spain,Africa
-Chagos Archipelago,United Kingdom;Mauritius;Maldives,United Kingdom,Africa
-Ras Doumeira,Eritrea;Djibouti,Eritrea,Africa
-Doumeira Island,Eritrea;Djibouti,Eritrea,Africa
-Glorioso Islands,Madagascar;France;Comoros,France,Africa
-Hala'ib Triangle,Sudan;Egypt,Egypt,Africa
-Ilemi Triangle,Kenya;South Sudan,Kenya,Africa
-KaNgwane,Eswatini;South Africa,South Africa,Africa
-Ingwavuma,Eswatini;South Africa,South Africa,Africa
-Koalou,Burkina Faso;Benin,Unknown,Africa
-Sipilou,Ivory Coast;Guinea,Ivory Coast,Africa
-Logoba,Uganda;South Sudan,Unknown,Africa
-Moyo District,Uganda;South Sudan,Unknown,Africa
-Chiengi,Zambia;Democratic Republic of Congo,Zambia,Africa
-Lunchinda-Pweto Province,Democratic Republic of Congo;Zambia,Zambia,Africa
-Mayotte,France;Comoros,France,Africa
-Mbamba Bay,Tanzania;Malawi,Tanzania,Africa
-Lake Nyasa,Malawi;Tanzania,Tanzania,Africa
-Mbañie Island,Equatorial Guinea;Gabon,Unknown,Africa
-Cocotiers,Equatorial Guinea;Gabon,Unknown,Africa
-Congas Island,Equatorial Guinea;Gabon,Unknown,Africa
-Migingo Island,Kenya;Uganda,Unknown,Africa
-Lolwe,Kenya;Uganda,Unknown,Africa
-Oyasi,Uganda;Kenya,Unknown,Africa
-Remba,Uganda;Kenya,Unknown,Africa
-Ringiti,Uganda;Kenya,Unknown,Africa
-Sigulu,Kenya;Uganda,Unknown,Africa
-Lake Victoria,Uganda;Kenya,Unknown,Africa
-Congo River,Republic of the Congo;Democratic Republic of Congo,Unknown,Africa
-Ntem River,Equatorial Guinea;Cameroon,Unknown,Africa
-Okpara River,Nigeria;Benin,Unknown,Africa
-Orange River,South Africa;Namibia,Unknown,Africa
-Rukwanzi Island,Democratic Republic of Congo;Uganda,Unknown,Africa
-Semliki River,Uganda;Democratic Republic of Congo,Unknown,Africa
-Sindabezi Island,Zimbabwe;Zambia,Zambia,Africa
-Socotra Archipelago,Somalia;Yemen,Unknown,Africa
-Tromelin Island,Mauritius;France,France,Africa
-Wadi Halfa,Sudan;Egypt,Egypt,Africa
-Ashmore and Cartier Islands,Australia;Indonesia,Australia,Asia
-Aarsal,Syria;Lebanon,Lebanon,Asia
-Deir El Aachayer,Syria;Lebanon,Lebanon,Asia
-Kfar Qouq,Syria;Lebanon,Lebanon,Asia
-Mazraat Deir al-Ashayer,Syria;Lebanon,Lebanon,Asia
-Qaa,Lebanon;Syria,Lebanon,Asia
-Qasr,Lebanon;Syria,Lebanon,Asia
-Tuffah,Syria;Lebanon,Lebanon,Asia
-Shatt al-Arab,Iraq;Iran,Unknown,Asia
-Abu Musa,Iran;United Arab Emirates,Iran,Asia
-Greater and Lesser Tunbs,United Arab Emirates;Iran,Iran,Asia
-Nagorno-Karabakh region,Azerbaijan;Armenia,Unknown,Asia
-Syunik Province,Azerbaijan;Armenia,Azerbaijan,Asia
-Azad Kashmir,India;Pakistan,,Asia
-Gilgit-Baltistan,India;Pakistan,,Asia
-Jammu and Kashmir,India;Pakistan,India,Asia
-Aksai Chin,People's Republic of China;China;India;Republic of China,Unknown,Outside UN
-Tawang,India;China,India,Asia
-Arunachal Pradesh,China;India,Unknown,Asia
-David Gareja monastery complex,Georgia;Azerbaijan,Unknown,Asia
-Doi Lang,Myanmar;Thailand,Myanmar,Asia
-Fasht Ad Dibal,Qatar;Bahrain,Unknown,Asia
-Qit'at Jaradah,Qatar;Bahrain,Unknown,Asia
-Fergana Valley,Kyrgyzstan;Tajikistan;Uzbekistan,Unknown,Asia
-Isfara Valley,Tajikistan;Kyrgyzstan,Tajikistan,Asia
-Ambalat,Malaysia;Indonesia,Unknown,Asia
-Kabaw,India;Myanmar,Unknown,Asia
-Golan Heights,Lebanon;Israel;Syria,Israel,Asia
-Green Line,Palestine;Israel,Israel,Asia
-West Bank,Palestine;Israel,Unknown,Asia
-East Jerusalem,Israel;Palestine,Unknown,Asia
-Kalapani,Nepal;India,India,Asia
-Susta River,Nepal;India,India,Asia
-Antudanda,India;Nepal,India,Asia
-Nawalparasi,India;Nepal,India,Asia
-Artsvashen,Armenia;Azerbaijan,Unknown,Asia
-Gegharkunik province,Azerbaijan;Armenia,Unknown,Asia
-Karki,Armenia;Azerbaijan,Unknown,Asia
-Nakhichevan Autonomous Republic,Azerbaijan;Armenia,Unknown,Asia
-Yukhari Askipara,Azerbaijan;Armenia,Unknown,Asia
-Barkhudarli,Armenia;Azerbaijan,Unknown,Asia
-Qazakh Rayon,Azerbaijan;Armenia,Unknown,Asia
-Yaradullu,Azerbaijan;Armenia,Unknown,Asia
-Khuriya Muriya Islands,Oman;Yemen,Oman,Asia
-Korean Peninsula,North Korea;South Korea,Unknown,Asia
-Military Demarcation Line,North Korea;South Korea,Unknown,Asia
-Sakhalin/Karafuto,Russia;Japan,Russia,Asia
-"Kuril/Chishima, and South Kuril/Chishima Islands",Japan;Russia,Russia,Asia
-Dokdo/Takeshima,Japan;North Korea;South Korea,South Korea,Asia
-Naf River,Bangladesh;Myanmar,Unknown,Asia
-Noktundo,South Korea;Russia,Russia,Asia
-Pedra Branca,Malaysia;Singapore,Singapore,Asia
-Singapore Strait,Malaysia;Singapore,Singapore,Asia
-Point 20,Malaysia;Singapore,Singapore,Asia
-O'Tangav,Laos;Cambodia,Laos,Asia
-Stung Treng Province,Laos;Cambodia,Laos,Asia
-Preah Vihear Temple,Cambodia;Thailand,Thailand,Asia
-Khao Phra Wihan,Thailand;Cambodia,Thailand,Asia
-Qaruh,Kuwait;Saudi Arabia,Kuwait,Asia
-Umm al Maradim,Saudi Arabia;Kuwait,Kuwait,Asia
-Sabah,Malaysia;Philippines,Malaysia,Asia
-North Borneo,Philippines;Malaysia,Malaysia,Asia
-Siachen Glacier,India;Pakistan,Unknown,Asia
-Saltoro Ridge,Pakistan;India,Unknown,Asia
-Sir Creek,India;Pakistan,Unknown,Asia
-Three Pagodas Pass,Thailand;Myanmar,Unknown,Asia
-Ukatnyy,Kazakhstan;Russia,Russia,Asia
-Zhestky,Kazakhstan;Russia,Russia,Asia
-Malyy Zhemchuzhnyy,Kazakhstan;Russia,Russia,Asia
-Ungar-Too,Uzbekistan;Kyrgyzstan,Kyrgyzstan,Asia
-Vozrozhdeniya Island,Kazakhstan;Uzbekistan,Unknown,Asia
-Limbang District,Brunei;Malaysia,Malaysia,Asia
-Tuzla Island,Ukraine;Russia,Unknown,Europe
-Strait of Kerch,Ukraine;Russia,Unknown,Europe
-Sarych,Russia;Ukraine,Unknown,Europe
-Sea of Azov,Ukraine;Russia,Unknown,Europe
-Crimea,Ukraine;Russia,Unknown,Europe
-Imia/Kardak,Turkey;Greece,Unknown,Europe
-Carlingford Lough,Ireland;United Kingdom,Unknown,Europe
-Lough Foyle,United Kingdom;Ireland,Unknown,Europe
-Gibraltar,Spain;United Kingdom,United Kingdom,Europe
-Rockall,Iceland;Denmark;Ireland;United Kingdom,Unknown,Europe
-Dollart bay,Germany;Netherlands,Unknown,Europe
-Lake Constance,Switzerland;Austria;Germany,Unknown,Europe
-Olivenza,Portugal;Spain,Spain,Europe
-Vila Real,Spain;Portugal,Spain,Europe
-municipality,Portugal;Spain,Spain,Europe
-Táliga,Portugal;Spain,Spain,Europe
-Island of Šarengrad,Serbia;Croatia,Unknown,Europe
-Island of Vukovar,Croatia;Serbia,Unknown,Europe
-Gulf of Piran,Slovenia;Croatia,Unknown,Europe
-Sveta Gera,Croatia;Slovenia,Unknown,Europe
-Prevlaka,Montenegro;Croatia,Croatia,Europe
-Sastavci,Bosnia and Herzegovina;Serbia,Serbia,Europe
-Klek peninsula,Croatia;Bosnia and Herzegovina,Croatia,Europe
-Veliki Školj,Bosnia and Herzegovina;Croatia,Croatia,Europe
-Mali Školj,Bosnia and Herzegovina;Croatia,Croatia,Europe
-Neum,Bosnia and Herzegovina;Croatia,Croatia,Europe
-Bousignies-sur-Roc,France;Belgium,Unknown,Europe
-Aves Island,Venezuela;Dominica,Venezuela,North and Central America
-Bajo Nuevo Bank,Jamaica;Colombia;Nicaragua;United States,Colombia,North and Central America
-Conejo Island,Honduras;El Salvador,Honduras,North and Central America
-Navassa Island,United States;Haiti,United States,North and Central America
-Sapodilla Cay,Honduras;Guatemala;Belize,Belize,North and Central America
-Serranilla Bank,Colombia;United States;Honduras;Nicaragua,Colombia,North and Central America
-Hans Island,Denmark;Canada;Greenland,Unknown,North and Central America
-Matthew and Hunter Islands,Vanuatu;France,France,Oceania
-Minerva Reefs,Fiji;Tonga,Tonga,Oceania
-Swains Island,Tokelau;United States,,Oceania
-Wake Island,Marshall Islands;United States,,Oceania
-Guayana Esequiba,Guyana;Venezuela,Guyana,South America
-Essequibo River,Venezuela;Guyana,Guyana,South America
-Ankoko Island/Isla de Anacoco,Venezuela;Guyana,Guyana,South America
-Arroyo de la Invernada,Uruguay;Brazil,Brazil,South America
-Rincón de Artigas,Uruguay;Brazil,Brazil,South America
-Vila Albornoz,Uruguay;Brazil,Brazil,South America
-Falkland Islands,Argentina;United Kingdom,United Kingdom,South America
-South Georgia and the South Sandwich Islands,United Kingdom;Argentina,United Kingdom,South America
-French Guiana,France;Suriname,France,South America
-Marouini River,France;Suriname,France,South America
-Tigri Area,Guyana;Suriname,Guyana,South America
-Courantyne River,Guyana;Suriname,Guyana,South America
-Isla Brasilera/Ilha Brasileira,Brazil;Uruguay,Brazil,South America
-Isla Suárez/Ilha de Guajará-mirim,Brazil;Bolivia,Bolivia,South America
-Gulf of Venezuela,Venezuela;Colombia,Unknown,South America
-Los Monjes Archipelago,Colombia;Venezuela,Unknown,South America
-Southern Patagonian Ice Field,Argentina;Chile,Unknown,South America
-Monte Fitz Roy,Chile;Argentina,Unknown,South America
-Cerro Murallón,Chile;Argentina,Unknown,South America
-Bakassi,Nigeria;Cameroon,Cameroon,Outside UN
-Bhutanese enclaves,Republic of China;Bhutan;People's Republic of China,People's Republic of China,Outside UN
-Tibet,Bhutan;People's Republic of China;Republic of China,People's Republic of China,Outside UN
-Darchen,People's Republic of China;Republic of China;Bhutan,People's Republic of China,Outside UN
-Doklam,Bhutan;Republic of China;People's Republic of China,People's Republic of China,Outside UN
-Demchok sector,Republic of China;People's Republic of China;India,Unknown,Outside UN
-Depsang Plains,India;Republic of China;People's Republic of China,Unknown,Outside UN
-Chumar,India;Republic of China;People's Republic of China,Unknown,Outside UN
-Kaurik,People's Republic of China;Republic of China;India,Unknown,Outside UN
-Shipki La,Republic of China;People's Republic of China;India,Unknown,Outside UN
-Barahoti,Republic of China;People's Republic of China;India,Unknown,Outside UN
-Jadhang,India;People's Republic of China;Republic of China,Unknown,Outside UN
-Lapthal,People's Republic of China;India;Republic of China,Unknown,Outside UN
-Nelang,India;People's Republic of China;Republic of China,Unknown,Outside UN
-Pulam Sumda,Republic of China;India;People's Republic of China,Unknown,Outside UN
-Sang,People's Republic of China;Republic of China;India,Unknown,Outside UN
-James Shoal,Republic of China;People's Republic of China;Malaysia,Malaysia,Outside UN
-Macclesfield Bank,People's Republic of China;Philippines;Republic of China,People's Republic of China,Outside UN
-Mainland China,Republic of China;People's Republic of China,People's Republic of China,Outside UN
-Hainan,People's Republic of China;Republic of China,People's Republic of China,Outside UN
-Heixiazi,People's Republic of China;Republic of China;Russia,Unknown,Outside UN
-Bolshoy Ussuriysky Island,People's Republic of China;Republic of China;Russia,Unknown,Outside UN
-Hong Kong,Republic of China;People's Republic of China,People's Republic of China,Outside UN
-Jiangxinpo,Republic of China;Myanmar,Myanmar,Outside UN
-Kosovo,Republic of Kosovo;Serbia,Republic of Kosovo,Outside UN
-Kula Kangri,Bhutan;Republic of China;People's Republic of China,Unknown,Outside UN
-Haa District,Bhutan;People's Republic of China;Republic of China,Unknown,Outside UN
-Kutuzov Island,Republic of China;Russia,Russia,Outside UN
-Macau,People's Republic of China;Republic of China,People's Republic of China,Outside UN
-Natuna Islands,Indonesia;People's Republic of China;Republic of China,People's Republic of China,Outside UN
-Ladakh,Pakistan;India,Unknown,Outside UN
-Outer Mongolia,Mongolia;Republic of China,Mongolia,Outside UN
-Pamir Mountains,Tajikistan;People's Republic of China;Republic of China,Unknown,Outside UN
-Paracel Islands,Republic of China;People's Republic of China;Vietnam,People's Republic of China,Outside UN
-Ryanggang Province,North Korea;South Korea;Republic of China,North Korea,Outside UN
-Rasŏn administrative division,South Korea;North Korea;Republic of China,North Korea,Outside UN
-Scarborough Shoal,Philippines;People's Republic of China;Republic of China,People's Republic of China,Outside UN
-Senkaku Islands,People's Republic of China;Japan;Republic of China,Japan,Outside UN
-Shaksgam Valley,People's Republic of China;Republic of China;India,People's Republic of China,Outside UN
-Sixty-Four Villages East of the Heilongjiang River,Russia;Republic of China,Russia,Outside UN
-South Tibet,People's Republic of China;Republic of China;India,India,Outside UN
-Spratly Islands,Malaysia;Vietnam;Brunei;Republic of China;Philippines;People's Republic of China,Unknown,Outside UN
-Taiwan,Republic of China;People's Republic of China,Republic of China,Outside UN
-Penghu,People's Republic of China;Republic of China,Republic of China,Outside UN
-Kinmen,People's Republic of China;Republic of China,Republic of China,Outside UN
-Matsu Islands,Republic of China;People's Republic of China,Republic of China,Outside UN
-Pratas Island,People's Republic of China;Republic of China,Republic of China,Outside UN
-Trans-Karakoram Tracts,India;People's Republic of China;Republic of China,People's Republic of China,Outside UN
-Tuva,Republic of China;Russia,Russia,Outside UN
-Wakhan Corridor,Republic of China;Islamic Republic of Afghanistan,,Outside UN
-Yalu River,South Korea;People's Republic of China;Republic of China;North Korea,Unknown,Outside UN
+Territory,Claimants,Controller,Region,Population
+Abyei,South Sudan;Sudan,Sudan,Africa,N/A
+Heglig,Sudan;South Sudan,Sudan,Africa,N/A
+Kafia Kingi,Sudan;South Sudan,Sudan,Africa,N/A
+Banc du Geyser,Madagascar;France;Comoros,Unknown,Africa,N/A
+Bassas da India,France;Madagascar,France,Africa,N/A
+Europa Island,Madagascar;France,France,Africa,N/A
+Juan de Nova Island,France;Madagascar,France,Africa,N/A
+Ceuta,Morocco;Spain,Spain,Africa,N/A
+Melilla,Spain;Morocco,Spain,Africa,N/A
+plazas de soberanía,Morocco;Spain,Spain,Africa,N/A
+Chagos Archipelago,United Kingdom;Mauritius;Maldives,United Kingdom,Africa,N/A
+Ras Doumeira,Eritrea;Djibouti,Eritrea,Africa,N/A
+Doumeira Island,Eritrea;Djibouti,Eritrea,Africa,N/A
+Glorioso Islands,Madagascar;France;Comoros,France,Africa,N/A
+Hala'ib Triangle,Sudan;Egypt,Egypt,Africa,N/A
+Ilemi Triangle,Kenya;South Sudan,Kenya,Africa,N/A
+KaNgwane,Eswatini;South Africa,South Africa,Africa,N/A
+Ingwavuma,Eswatini;South Africa,South Africa,Africa,N/A
+Koalou,Burkina Faso;Benin,Unknown,Africa,N/A
+Sipilou,Ivory Coast;Guinea,Ivory Coast,Africa,N/A
+Logoba,Uganda;South Sudan,Unknown,Africa,N/A
+Moyo District,Uganda;South Sudan,Unknown,Africa,N/A
+Chiengi,Zambia;Democratic Republic of Congo,Zambia,Africa,N/A
+Lunchinda-Pweto Province,Democratic Republic of Congo;Zambia,Zambia,Africa,N/A
+Mayotte,France;Comoros,France,Africa,N/A
+Mbamba Bay,Tanzania;Malawi,Tanzania,Africa,N/A
+Lake Nyasa,Malawi;Tanzania,Tanzania,Africa,N/A
+Mbañie Island,Equatorial Guinea;Gabon,Unknown,Africa,N/A
+Cocotiers,Equatorial Guinea;Gabon,Unknown,Africa,N/A
+Congas Island,Equatorial Guinea;Gabon,Unknown,Africa,N/A
+Migingo Island,Kenya;Uganda,Unknown,Africa,N/A
+Lolwe,Kenya;Uganda,Unknown,Africa,N/A
+Oyasi,Uganda;Kenya,Unknown,Africa,N/A
+Remba,Uganda;Kenya,Unknown,Africa,N/A
+Ringiti,Uganda;Kenya,Unknown,Africa,N/A
+Sigulu,Kenya;Uganda,Unknown,Africa,N/A
+Lake Victoria,Uganda;Kenya,Unknown,Africa,N/A
+Congo River,Republic of the Congo;Democratic Republic of Congo,Unknown,Africa,N/A
+Ntem River,Equatorial Guinea;Cameroon,Unknown,Africa,N/A
+Okpara River,Nigeria;Benin,Unknown,Africa,N/A
+Orange River,South Africa;Namibia,Unknown,Africa,N/A
+Rukwanzi Island,Democratic Republic of Congo;Uganda,Unknown,Africa,N/A
+Semliki River,Uganda;Democratic Republic of Congo,Unknown,Africa,N/A
+Sindabezi Island,Zimbabwe;Zambia,Zambia,Africa,N/A
+Socotra Archipelago,Somalia;Yemen,Unknown,Africa,N/A
+Tromelin Island,Mauritius;France,France,Africa,N/A
+Wadi Halfa,Sudan;Egypt,Egypt,Africa,N/A
+Ashmore and Cartier Islands,Australia;Indonesia,Australia,Asia,N/A
+Aarsal,Syria;Lebanon,Lebanon,Asia,N/A
+Deir El Aachayer,Syria;Lebanon,Lebanon,Asia,N/A
+Kfar Qouq,Syria;Lebanon,Lebanon,Asia,N/A
+Mazraat Deir al-Ashayer,Syria;Lebanon,Lebanon,Asia,N/A
+Qaa,Lebanon;Syria,Lebanon,Asia,N/A
+Qasr,Lebanon;Syria,Lebanon,Asia,N/A
+Tuffah,Syria;Lebanon,Lebanon,Asia,N/A
+Shatt al-Arab,Iraq;Iran,Unknown,Asia,N/A
+Abu Musa,Iran;United Arab Emirates,Iran,Asia,N/A
+Greater and Lesser Tunbs,United Arab Emirates;Iran,Iran,Asia,N/A
+Nagorno-Karabakh region,Azerbaijan;Armenia,Unknown,Asia,N/A
+Syunik Province,Azerbaijan;Armenia,Azerbaijan,Asia,N/A
+Azad Kashmir,India;Pakistan,Pakistan,Asia,N/A
+Gilgit-Baltistan,India;Pakistan,Pakistan,Asia,N/A
+Jammu and Kashmir,India;Pakistan,India,Asia,N/A
+Aksai Chin,India;Republic of China;People's Republic of China;China,Unknown,Outside UN,N/A
+Tawang,India;China,India,Asia,N/A
+Arunachal Pradesh,China;India,Unknown,Asia,N/A
+David Gareja monastery complex,Georgia;Azerbaijan,Unknown,Asia,N/A
+Doi Lang,Myanmar;Thailand,Myanmar,Asia,N/A
+Fasht Ad Dibal,Qatar;Bahrain,Unknown,Asia,N/A
+Qit'at Jaradah,Qatar;Bahrain,Unknown,Asia,N/A
+Fergana Valley,Kyrgyzstan;Tajikistan;Uzbekistan,Unknown,Asia,N/A
+Isfara Valley,Tajikistan;Kyrgyzstan,Tajikistan,Asia,N/A
+Ambalat,Malaysia;Indonesia,Unknown,Asia,N/A
+Kabaw,India;Myanmar,Unknown,Asia,N/A
+Golan Heights,Lebanon;Israel;Syria,Israel,Asia,N/A
+Green Line,Palestine;Israel,Israel,Asia,N/A
+West Bank,Palestine;Israel,Unknown,Asia,N/A
+East Jerusalem,Israel;Palestine,Unknown,Asia,N/A
+Kalapani,Nepal;India,India,Asia,N/A
+Susta River,Nepal;India,India,Asia,N/A
+Antudanda,India;Nepal,India,Asia,N/A
+Nawalparasi,India;Nepal,India,Asia,N/A
+Artsvashen,Armenia;Azerbaijan,Unknown,Asia,N/A
+Gegharkunik province,Azerbaijan;Armenia,Unknown,Asia,N/A
+Karki,Armenia;Azerbaijan,Unknown,Asia,N/A
+Nakhichevan Autonomous Republic,Azerbaijan;Armenia,Unknown,Asia,N/A
+Yukhari Askipara,Azerbaijan;Armenia,Unknown,Asia,N/A
+Barkhudarli,Armenia;Azerbaijan,Unknown,Asia,N/A
+Qazakh Rayon,Azerbaijan;Armenia,Unknown,Asia,N/A
+Yaradullu,Azerbaijan;Armenia,Unknown,Asia,N/A
+Khuriya Muriya Islands,Oman;Yemen,Oman,Asia,N/A
+Korean Peninsula,South Korea;North Korea,Unknown,Asia,N/A
+Military Demarcation Line,South Korea;North Korea,Unknown,Asia,N/A
+Sakhalin/Karafuto,Russia;Japan,Russia,Asia,N/A
+"Kuril/Chishima, and South Kuril/Chishima Islands",Japan;Russia,Russia,Asia,N/A
+Dokdo/Takeshima,Japan;North Korea;South Korea,South Korea,Asia,N/A
+Naf River,Bangladesh;Myanmar,Unknown,Asia,N/A
+Noktundo,South Korea;Russia,Russia,Asia,N/A
+Pedra Branca,Malaysia;Singapore,Singapore,Asia,N/A
+Singapore Strait,Malaysia;Singapore,Singapore,Asia,N/A
+Point 20,Malaysia;Singapore,Singapore,Asia,N/A
+O'Tangav,Laos;Cambodia,Laos,Asia,N/A
+Stung Treng Province,Laos;Cambodia,Laos,Asia,N/A
+Preah Vihear Temple,Cambodia;Thailand,Thailand,Asia,N/A
+Khao Phra Wihan,Thailand;Cambodia,Thailand,Asia,N/A
+Qaruh,Kuwait;Saudi Arabia,Kuwait,Asia,N/A
+Umm al Maradim,Saudi Arabia;Kuwait,Kuwait,Asia,N/A
+Sabah,Malaysia;Philippines,Malaysia,Asia,N/A
+North Borneo,Philippines;Malaysia,Malaysia,Asia,N/A
+Siachen Glacier,Pakistan;India,Unknown,Asia,N/A
+Saltoro Ridge,India;Pakistan,Unknown,Asia,N/A
+Sir Creek,Pakistan;India,Unknown,Asia,N/A
+Three Pagodas Pass,Myanmar;Thailand,Unknown,Asia,N/A
+Ukatnyy,Kazakhstan;Russia,Russia,Asia,N/A
+Zhestky,Kazakhstan;Russia,Russia,Asia,N/A
+Malyy Zhemchuzhnyy,Kazakhstan;Russia,Russia,Asia,N/A
+Ungar-Too,Kyrgyzstan;Uzbekistan,Kyrgyzstan,Asia,N/A
+Vozrozhdeniya Island,Kazakhstan;Uzbekistan,Unknown,Asia,N/A
+Limbang District,Malaysia;Brunei,Malaysia,Asia,N/A
+Tuzla Island,Russia;Ukraine,Unknown,Europe,N/A
+Strait of Kerch,Russia;Ukraine,Unknown,Europe,N/A
+Sarych,Russia;Ukraine,Unknown,Europe,N/A
+Sea of Azov,Russia;Ukraine,Unknown,Europe,N/A
+Crimea,Russia;Ukraine,Unknown,Europe,N/A
+Imia/Kardak,Greece;Turkey,Unknown,Europe,N/A
+Carlingford Lough,United Kingdom;Ireland,Unknown,Europe,N/A
+Lough Foyle,United Kingdom;Ireland,Unknown,Europe,N/A
+Gibraltar,United Kingdom;Spain,United Kingdom,Europe,N/A
+Rockall,United Kingdom;Iceland;Ireland;Denmark,Unknown,Europe,N/A
+Dollart bay,Germany;Netherlands,Unknown,Europe,N/A
+Lake Constance,Austria;Switzerland;Germany,Unknown,Europe,N/A
+Olivenza,Spain;Portugal,Spain,Europe,N/A
+Vila Real,Spain;Portugal,Spain,Europe,N/A
+Táliga,Portugal;Spain,Spain,Europe,N/A
+Island of Šarengrad,Croatia;Serbia,Unknown,Europe,N/A
+Island of Vukovar,Croatia;Serbia,Unknown,Europe,N/A
+Gulf of Piran,Slovenia;Croatia,Unknown,Europe,N/A
+Sveta Gera,Slovenia;Croatia,Unknown,Europe,N/A
+Prevlaka,Montenegro;Croatia,Croatia,Europe,N/A
+Sastavci,Serbia;Bosnia and Herzegovina,Serbia,Europe,N/A
+Klek peninsula,Bosnia and Herzegovina;Croatia,Croatia,Europe,N/A
+Veliki Školj,Croatia;Bosnia and Herzegovina,Croatia,Europe,N/A
+Mali Školj,Croatia;Bosnia and Herzegovina,Croatia,Europe,N/A
+Neum,Croatia;Bosnia and Herzegovina,Croatia,Europe,N/A
+Bousignies-sur-Roc,Belgium;France,Unknown,Europe,N/A
+Aves Island,Dominica;Venezuela,Venezuela,North and Central America,N/A
+Bajo Nuevo Bank,United States;Colombia;Nicaragua;Jamaica,Colombia,North and Central America,N/A
+Conejo Island,El Salvador;Honduras,Honduras,North and Central America,N/A
+Navassa Island,Haiti;United States,United States,North and Central America,N/A
+Sapodilla Cay,Belize;Honduras;Guatemala,Belize,North and Central America,N/A
+Serranilla Bank,Nicaragua;Colombia;Honduras;United States,Colombia,North and Central America,N/A
+Hans Island,Greenland;Denmark;Canada,Unknown,North and Central America,N/A
+Matthew and Hunter Islands,France;Vanuatu,France,Oceania,N/A
+Minerva Reefs,Tonga;Fiji,Tonga,Oceania,N/A
+Swains Island,United States;Tokelau,United States,Oceania,N/A
+Wake Island,United States;Marshall Islands,United States,Oceania,N/A
+Guayana Esequiba,Guyana;Venezuela,Guyana,South America,N/A
+Essequibo River,Venezuela;Guyana,Guyana,South America,N/A
+Ankoko Island/Isla de Anacoco,Venezuela;Guyana,Guyana,South America,N/A
+Arroyo de la Invernada,Brazil;Uruguay,Brazil,South America,N/A
+Rincón de Artigas,Uruguay;Brazil,Brazil,South America,N/A
+Vila Albornoz,Uruguay;Brazil,Brazil,South America,N/A
+Falkland Islands,Argentina;United Kingdom,United Kingdom,South America,N/A
+South Georgia and the South Sandwich Islands,United Kingdom;Argentina,United Kingdom,South America,N/A
+French Guiana,Suriname;France,France,South America,N/A
+Marouini River,Suriname;France,France,South America,N/A
+Tigri Area,Suriname;Guyana,Guyana,South America,N/A
+Courantyne River,Suriname;Guyana,Guyana,South America,N/A
+Isla Brasilera/Ilha Brasileira,Uruguay;Brazil,Brazil,South America,N/A
+Isla Suárez/Ilha de Guajará-mirim,Brazil;Bolivia,Bolivia,South America,N/A
+Gulf of Venezuela,Colombia;Venezuela,Unknown,South America,N/A
+Los Monjes Archipelago,Colombia;Venezuela,Unknown,South America,N/A
+Southern Patagonian Ice Field,Argentina;Chile,Unknown,South America,N/A
+Monte Fitz Roy,Argentina;Chile,Unknown,South America,N/A
+Cerro Murallón,Argentina;Chile,Unknown,South America,N/A
+Bakassi,Cameroon;Nigeria,Cameroon,Outside UN,N/A
+Bhutanese enclaves,Republic of China;People's Republic of China;Bhutan,People's Republic of China,Outside UN,N/A
+Darchen,People's Republic of China;Bhutan;Republic of China,People's Republic of China,Outside UN,N/A
+Doklam,Republic of China;People's Republic of China;Bhutan,People's Republic of China,Outside UN,N/A
+Demchok sector,India;Republic of China;People's Republic of China,Unknown,Outside UN,N/A
+Depsang Plains,People's Republic of China;Republic of China;India,Unknown,Outside UN,N/A
+Chumar,India;People's Republic of China;Republic of China,Unknown,Outside UN,N/A
+Kaurik,People's Republic of China;Republic of China;India,Unknown,Outside UN,N/A
+Shipki La,India;Republic of China;People's Republic of China,Unknown,Outside UN,N/A
+Barahoti,Republic of China;India;People's Republic of China,Unknown,Outside UN,N/A
+Jadhang,People's Republic of China;India;Republic of China,Unknown,Outside UN,N/A
+Lapthal,People's Republic of China;Republic of China;India,Unknown,Outside UN,N/A
+Nelang,India;Republic of China;People's Republic of China,Unknown,Outside UN,N/A
+Pulam Sumda,Republic of China;India;People's Republic of China,Unknown,Outside UN,N/A
+Sang,Republic of China;India;People's Republic of China,Unknown,Outside UN,N/A
+James Shoal,Malaysia;Republic of China;People's Republic of China,Malaysia,Outside UN,N/A
+Macclesfield Bank,Philippines;People's Republic of China;Republic of China,People's Republic of China,Outside UN,N/A
+Mainland China,People's Republic of China;Republic of China,People's Republic of China,Outside UN,N/A
+Hainan,People's Republic of China;Republic of China,People's Republic of China,Outside UN,N/A
+Heixiazi,Republic of China;People's Republic of China;Russia,Unknown,Outside UN,N/A
+Bolshoy Ussuriysky Island,Russia;Republic of China;People's Republic of China,Unknown,Outside UN,N/A
+Hong Kong,Republic of China;People's Republic of China,People's Republic of China,Outside UN,N/A
+Jiangxinpo,Myanmar;Republic of China,Myanmar,Outside UN,N/A
+Kosovo,Republic of Kosovo;Serbia,Republic of Kosovo,Outside UN,N/A
+Kula Kangri,Republic of China;People's Republic of China;Bhutan,Unknown,Outside UN,N/A
+Haa District,Republic of China;People's Republic of China;Bhutan,Unknown,Outside UN,N/A
+Kutuzov Island,Republic of China;Russia,Russia,Outside UN,N/A
+Macau,People's Republic of China;Republic of China,People's Republic of China,Outside UN,N/A
+Natuna Islands,Republic of China;People's Republic of China;Indonesia,People's Republic of China,Outside UN,N/A
+Ladakh,India;Pakistan,Unknown,Outside UN,N/A
+Outer Mongolia,Mongolia;Republic of China,Mongolia,Outside UN,N/A
+Pamir Mountains,Tajikistan;Republic of China;People's Republic of China,Unknown,Outside UN,N/A
+Paracel Islands,People's Republic of China;Republic of China;Vietnam,People's Republic of China,Outside UN,N/A
+Ryanggang Province,Republic of China;South Korea;North Korea,North Korea,Outside UN,N/A
+Rasŏn administrative division,Republic of China;North Korea;South Korea,North Korea,Outside UN,N/A
+Scarborough Shoal,Philippines;Republic of China;People's Republic of China,People's Republic of China,Outside UN,N/A
+Senkaku Islands,Japan;People's Republic of China;Republic of China,Japan,Outside UN,N/A
+Shaksgam Valley,Republic of China;People's Republic of China;India,People's Republic of China,Outside UN,N/A
+Sixty-Four Villages East of the Heilongjiang River,Russia;Republic of China,Russia,Outside UN,N/A
+South Tibet,India;People's Republic of China;Republic of China,India,Outside UN,N/A
+Spratly Islands,Malaysia;People's Republic of China;Philippines;Brunei;Republic of China;Vietnam,Unknown,Outside UN,N/A
+Taiwan,People's Republic of China;Republic of China,Republic of China,Outside UN,N/A
+Penghu,Republic of China;People's Republic of China,Republic of China,Outside UN,N/A
+Kinmen,Republic of China;People's Republic of China,Republic of China,Outside UN,N/A
+Matsu Islands,Republic of China;People's Republic of China,Republic of China,Outside UN,N/A
+Pratas Island,People's Republic of China;Republic of China,Republic of China,Outside UN,N/A
+Trans-Karakoram Tracts,Republic of China;People's Republic of China;India,People's Republic of China,Outside UN,N/A
+Tuva,Russia;Republic of China,Russia,Outside UN,N/A
+Wakhan Corridor,Islamic Republic of Afghanistan;Republic of China,Islamic Emirate of Afghanistan,Outside UN,N/A
+Yalu River,South Korea;North Korea;Republic of China;People's Republic of China,Unknown,Outside UN,N/A

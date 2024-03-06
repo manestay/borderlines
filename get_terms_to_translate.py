@@ -27,7 +27,7 @@ if __name__ == "__main__":
     os.makedirs(terms_dir, exist_ok=True)
 
     df['Claimant_Codes'] = df['Claimants'].apply(
-        lambda l: [countries_info[c]['code'] for c in l]).to_list()
+        lambda l: [countries_info[c]['Lang_Code'] for c in l]).to_list()
 
     df_temp = pd.read_csv(TEMP_PATH, sep='\t')
     usable_codes = df_temp['code'].values
@@ -36,10 +36,6 @@ if __name__ == "__main__":
     terms_d = defaultdict(set)
     for i, row in df.iterrows():
         for code in row['Claimant_Codes']:
-            if code == 'zh':
-                code = 'zh-CN'
-            elif code == 'he':
-                code = 'iw'
             if code not in usable_codes:
                 skipped_codes.add(code)
                 continue
@@ -58,7 +54,7 @@ if __name__ == "__main__":
 
     ### also write the terms per line
     codes_per_claimant = df['Claimants'].apply(
-        lambda l: [countries_info[c]['code'] for c in l]).to_list()
+        lambda l: [countries_info[c]['Lang_Code'] for c in l]).to_list()
 
     code2line = defaultdict(set)
     for i, codes_claim in enumerate(codes_per_claimant):
