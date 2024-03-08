@@ -118,7 +118,6 @@ class DecoderModel(ModelBase):
         seq_log_prob = seq_log_prob.view(batch["targets"].size(0),
                                          -1)  # TODO(Victor): this reshapes works based on the assumption that all examples have the same number of choices. the pre-processing doesn't make this assumption.
         predictions = seq_log_prob.argmax(dim=-1)
-        import pdb; pdb.set_trace()
         return predictions, seq_log_prob
 
 

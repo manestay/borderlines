@@ -4,3 +4,5 @@ response_tables
 outputs*/
 translate_*/
 __pycache__/
+
+datasets/

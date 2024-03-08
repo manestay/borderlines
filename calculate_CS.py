@@ -138,9 +138,9 @@ if __name__ == "__main__":
     print(f'Consistency CS (all): {mean_cons_cs:.1%} (over {len(cons_cs_l)} rows)')
 
     # mean # for responses
-    response_countries = df['Responses_d'].apply(lambda x: set(x.values())).agg(len)
+    response_countries = df['Responses_d'].apply(lambda x: set(x.values())).transform(len)
     print(f'Mean # Response Countries: {response_countries.mean():.2f} ({response_countries.std():.2f})')
-    response_en_countries = df['Responses_d_en'].apply(lambda x: set(x.values())).agg(len)
+    response_en_countries = df['Responses_d_en'].apply(lambda x: set(x.values())).transform(len)
     print(f'Mean # Response Countries + en: {response_en_countries.mean():.2f} ({response_en_countries.std():.2f})')
 
     # query-level stats
@@ -150,9 +150,9 @@ if __name__ == "__main__":
     counter_values = list(counter.values())
     print(f'Mean # territories per lang: {np.mean(counter_values):.2f} ({np.std(counter_values):.2f})')
 
-    claim_langs = df['Claimant_Codes'].apply(set).agg(len)
+    claim_langs = df['Claimant_Codes'].apply(set).transform(len)
     print(f'Mean # Claimant Languages: {claim_langs.mean():.2f} ({claim_langs.std():.2f})')
-    claims = df['Claimants'].apply(set).agg(len)
+    claims = df['Claimants'].apply(set).transform(len)
     print(f'Mean # Claimants: {claims.mean():.2f} ({claims.std():.2f})')
 
-    print(f'Total # prompts: {df["Responses_d"].agg(len).sum()}', f' | Total # territories: {df.shape[0]}')
+    print(f'Total # prompts: {df["Responses_d"].transform(len).sum()}', f' | Total # territories: {df.shape[0]}')

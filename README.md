@@ -7,7 +7,7 @@ The entire dataset consists of 3 separate datasets: A) the disputed territories 
 
 You can obtain the dataset by running either option A, loading from the datasets hub, or option B, cloning the repository. Note that the evaluation suite (below) currently only supports B. WIP is update the suite to support A.
 
-### A. Load from Datasets Hub
+### 1. Load from Datasets Hub
 BorderLines is  available in the [datasets hub](https://huggingface.co/datasets/manestay/borderlines). Load by running:
 
 ```
@@ -25,8 +25,9 @@ countries = datasets.load_dataset('manestay/borderlines', 'countries')['train']
 queries = datasets.load_dataset('manestay/borderlines', 'queries')
 queries = queries.map(lambda row: {'Claimants_Native': row['Claimants_Native'].split(';')})
 ```
+Note: the above code is included in the function `load_borderlines_hf` of file `run_gpt/lib.py`.
 
-### B. Clone this repository
+### 2. Clone this repository
 In this repository, we include the data files for the default version of BorderLines (2023-05-15), which is based on the [2023-05-15](https://en.wikipedia.org/w/index.php?title=List_of_territorial_disputes&oldid=1154894956) article.
 
 The files are:
@@ -36,58 +37,51 @@ The files are:
   the questions, in Spanish, for disputed territories in which a Spanish-speaking country is involved
 * `prompts/prompts_q_mc.txt`: multiple-choice questions, in English, for each disputed territory. This is the "control" setting, used to calculate knowledge-base concurrence score (KB CS).
 
+#### Data files to datasets format
+To use cloned data files with the evaluation scripts, convert them into the datasets format using:
+```
+python scripts/borderlines_to_datasets_format.py -o datasets/v1 -p prompts/prompts_q_mc.txt -td translate/terms -tp disputed_territories.csv -ip countries_info.json -pd translate/prompts_mc_q
+```
+
 ## II. Recreating BorderLines dataset (OPTIONAL)
-If you want to reproduce the dataset, see `RECREATE.md`. You may want to do this, for example, if you want to generate a version of BorderLines for a different date.
-Otherwise, skip to III.
+If you want to reproduce the dataset, see `RECREATE.md`. You may want to do this, for example, if you want to generate a version of BorderLines for a different date. Otherwise, skip to III.
 
 Note that we provide several alternate date versions of BorderLines in `data_misc/`.
 
 ## III. Evaluation Suite on BorderLines
 
 ### 1. Run inference for language models
-**NOTE**: The below commands run on BorderLines v1. If you followed section II. to create a new version, you should adjust the arguments accordingly.
-
-We use rank classification to obtain a model's responses.
+**NOTE**: The below commands run on BorderLines v1, downloaded from the datasets hub. If you are running on a local version (i.e. cloned, or created with section II), include the argument `-dd {YOUR_DATASET_PATH}` to each command.
 
 #### A. GPT-3 inference
+For GPT-3 models, we use rank classification. This means that given a query, and choices A and B, we concatenate each choice {query + A, query + B}, calculate the probability of either prompt, and assign the more likely one as the model's response.
+
+__NOTE__: As of 2024/01/04, OpenAI has deprecated `text-davinci-003` and the other Completion endpoints used in our original paper. We recommend using `davinci-002`.
+
+To run:
 ```
-# runs prompts on davinci
-# run over English
-python run_gpt/run_inference_rank.py -i prompts/prompts_q_mc.txt -o outputs/gpt3_dv/responses_mc_all.txt -c prompts/choices.txt -b 70 -m text-davinci-003 --print -k {OPENAI_API_KEY}
-
-# run over languages
-run_gpt/run_inference_rank_folder.sh translate/prompts_mc_q outputs/gpt3_dv text-davinci-003
-
-# run prompts on curie
-python run_gpt/run_inference_rank.py -i prompts/prompts_q_mc.txt -o outputs/gpt3_c/responses_mc_all.txt -c prompts/choices.txt -b 70 -m text-curie-001 --print -k {OPENAI_API_KEY}
-
-run_gpt/run_inference_rank_folder.sh translate/prompts_mc_q outputs/gpt3_c text-curie-001
+# run English and multilingual prompts
+python run_gpt/run_inference_rank.py -o outputs/gpt3_dv2 -m text-davinci-003 --print --batch_size 50 --sleep 10 -k {OPENAI_API_KEY}
 
 ```
 Depending on your rate limit for the OpenAI API, you may need to adjust `--batch_size` and `--sleep`.
 
-#### B. GPT-4 inference
-For GPT-4, we allow the model to generate a response, then parse a selection from the output. This parsing approach allows us to perform our prompt modification experiments.
-
-We run for 4 system prompts; these are found in `run_gpt/system_prompts/{prompt_name}.txt`. Below we use the `vanilla` prompt, and you should modify as needed.
+#### B. Local model inference
+For local models (BLOOM, T0, etc.), we use rank classification. This is implemented in `rank_outputs/`:
 
 ```
-# run vanilla prompt on gpt-4-0613
-# run over English
-python run_gpt/run_inference.py -i prompts/prompts_q_mc.txt -o outputs/gpt4-0314/vanilla/responses_mc_all.txt -m gpt-4-0613 -sys run_gpt/system_prompts/vanilla.txt -tok 128
-
-# run over languages
-run_gpt/run_inference_rank_folder.sh translate/prompts_mc_q outputs/gpt4-0613/vanilla gpt-4-0613 vanilla
+# run English and multilingual prompts
+python rank_outputs/main.py -o outputs/bloomz-560m-tai -m bigscience/bloomz-560m --batch_size 24
 ```
 
-#### C. BLOOM inference
-For BLOOM models:
+#### c. GPT-4 inference
+For GPT-4, we use a parsing approach. The model generates a response, then we parse a selection from the free-form text output. This allows us to perform our prompt modification experiments.
 
+Run on the 4 system prompt configurations:
 ```
-# run over entire BorderLines dataset, in English
-python rank_outputs/main.py prompts/prompts_q_mc.txt outputs/bloom/responses_mc_all.txt -m bigscience/bloom-7b1
-# run with multilingual prompts
-python rank_outputs/main.py translate/prompts_mc_q outputs/bloom-tai -m bigscience/bloom-7b1
+for PROMPT in vanilla nationalist un_peacekeeper input_demo ; do
+  echo python run_gpt/run_inference.py -o outputs/gpt4/$PROMPT -m gpt-4 --system run_gpt/system_prompts/$PROMPT.txt --sleep 0
+done
 ```
 
 #### 2. Evaluate!
@@ -95,21 +89,29 @@ After running inference, you will have multiple response files (1 per language).
 Combine them into a response table by running:
 
 ```
+# run for GPT-3
 python gen_response_table.py translate/terms outputs/gpt3_dv/ outputs/gpt3_dv/response_table.csv translate/prompts_mc_q/
 
-python gen_response_table.py translate/terms outputs/gpt3_c/ outputs/gpt3_c/response_table.csv translate/prompts_mc_q/
+# run for GPT-4 vanilla prompt
+# --no_manual flag enabled for simplicity (see below)
+python gen_response_table.py -rd outputs/gpt4-0314/vanilla --no_manual
 
-# update the args to run for the other models and prompt settings
+# modify args for outputs from other models and prompts
 ```
 
-__Note for direct prompting experiments__: for GPT-4 responses, we need to parse the answer choices from the output text. The `gen_response_table.py` script will attempt to automatically parse at first. For responses where this fails, the script will ask the user to "Make a choice". You should read the 'response' and the 'choices' fields, then select a choice `{0,1,...}`.
+__Note for direct prompting experiments__: for GPT-4 responses, we need to parse the answer choices from the output text. The `gen_response_table.py` script will attempt to automatically parse at first. Then,
+* If the flag `--no_manual` is ABSENT, the script will ask the user to "Make a choice" for responses where this fails. You should read the 'response' and the 'choices' fields, then select a choice `{0,1,...}`.
+* If the flag `--no_manual` is PRESENT, the script will attempt to match the choice that first appears in the responses.
+After, it will select the 0-th index.
 
 #### 3. Analyze concurrence scores
 Calculate the CS scores, as seen in Table 2 of the paper:
 ```
-python -i calculate_CS.py outputs/gpt3_dv/response_table.csv
+python calculate_CS.py outputs/gpt3_dv/response_table.csv
 
-python -i calculate_CS.py outputs/gpt3_c/response_table.csv
+python calculate_CS.py outputs/gpt4-0314/vanilla/response_table.csv
+
+# modify args for outputs from other models and prompts
 ```
 
 ## Citation
