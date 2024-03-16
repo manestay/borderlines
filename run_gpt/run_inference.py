@@ -28,8 +28,8 @@ parser.add_argument('--system_prompt', '-sys', default='run_gpt/system_prompts/v
 def add_demographics(system_prompt, choices, countries_info):
     arr = []
     for country in choices:
-        religion = countries_info[country]['religion']
-        lang = countries_info[country]['name']
+        religion = countries_info[country]['Religion']
+        lang = countries_info[country]['Lang_Name']
 
         arr.append(f'{country}, Religion: {religion}, Language: {lang}')
 
@@ -131,7 +131,7 @@ def run_inference(query_l, choices_l, system_prompt, out_name, lang, countries, 
     f_op = None
     if '|' in system_prompt:
         # if dynamic prompt, save prompts for debugging
-        out_prompt_path = out_name / f'prompts_used.{lang}'
+        out_prompt_path = out_name.parent / f'prompts_used.{lang}'
         f_op = out_prompt_path.open('w')
 
     with out_name.open('w') as f_out, tqdm(total=len(query_l)) as pbar:
