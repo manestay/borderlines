@@ -56,12 +56,12 @@ Note that we provide several alternate date versions of BorderLines in `data_mis
 #### A. GPT-3 inference
 For GPT-3 models, we use rank classification. This means that given a query, and choices A and B, we concatenate each choice {query + A, query + B}, calculate the probability of either prompt, and assign the more likely one as the model's response.
 
-__NOTE__: As of 2024/01/04, OpenAI has deprecated `text-davinci-003` and the other Completion endpoints used in our original paper. We recommend using `davinci-002`.
+__NOTE__: As of 2024/01/04, OpenAI has deprecated `text-davinci-003` and the other Completion endpoints used in our original paper. We recommend using `davinci-002`, as shown below.
 
 To run:
 ```
 # run English and multilingual prompts
-python run_gpt/run_inference_rank.py -o outputs/gpt3_dv2 -m text-davinci-003 --print --batch_size 50 --sleep 10 -k {OPENAI_API_KEY}
+python run_gpt/run_inference_rank.py -o outputs/gpt3_dv2 -m davinci-002 --print --batch_size 50 --sleep 10 -k {OPENAI_API_KEY}
 
 ```
 Depending on your rate limit for the OpenAI API, you may need to adjust `--batch_size` and `--sleep`.
@@ -71,7 +71,9 @@ For local models (BLOOM, T0, etc.), we use rank classification. This is implemen
 
 ```
 # run English and multilingual prompts
-python rank_outputs/main.py -o outputs/bloomz-560m-tai -m bigscience/bloomz-560m --batch_size 24
+python rank_outputs/main.py -o outputs/bloomz-560m -m bigscience/bloomz-560m --batch_size 24
+
+# run for 7b1, bloom, etc
 ```
 
 #### c. GPT-4 inference
@@ -90,7 +92,10 @@ Combine them into a response table by running:
 
 ```
 # run for GPT-3
-python gen_response_table.py translate/terms outputs/gpt3_dv/ outputs/gpt3_dv/response_table.csv translate/prompts_mc_q/
+python gen_response_table.py -rd outputs/gpt3_dv2
+
+# run for BLOOMZ 560M
+python gen_response_table.py -rd outputs/bloomz-560m
 
 # run for GPT-4 vanilla prompt
 # --no_manual flag enabled for simplicity (see below)
@@ -107,7 +112,9 @@ After, it will select the 0-th index.
 #### 3. Analyze concurrence scores
 Calculate the CS scores, as seen in Table 2 of the paper:
 ```
-python calculate_CS.py outputs/gpt3_dv/response_table.csv
+python calculate_CS.py outputs/gpt3_dv2/response_table.csv
+
+python calculate_CS.py outputs/bloomz-560m/response_table.csv
 
 python calculate_CS.py outputs/gpt4-0314/vanilla/response_table.csv
 
