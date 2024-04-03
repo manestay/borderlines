@@ -1,6 +1,6 @@
 # BorderLines Dataset of Territorial Disputes
 
-Code + Data for the [arXiv](https://arxiv.org/abs/2305.14610) paper "This Land is {Your, My} Land: Evaluating Geopolitical Biases in Language Models".
+Code + Data for the [NAACL 2024](https://arxiv.org/abs/2305.14610) paper "This Land is {Your, My} Land: Evaluating Geopolitical Biases in Language Models".
 
 ## I. Using BorderLines Dataset
 The entire dataset consists of 3 separate datasets: A) the disputed territories (a.k.a. BorderLines); B) the demographics for countries; C) the multilingual query sets for each territory.
@@ -124,9 +124,9 @@ python calculate_CS.py outputs/gpt4-0314/vanilla/response_table.csv
 ## Citation
 ```
 @article{li2024land,
-  title={This Land is $\{$Your, My$\}$ Land: Evaluating Geopolitical Biases in Language Models through Territorial Disputes},
-  author={Li, Bryan and Haider, Samar and Callison-Burch, Chris},
-  journal={arXiv preprint arXiv:2305.14610},
-  year={2024}
+      title={This Land is \{Your, My\} Land: Evaluating Geopolitical Biases in Language Models Through Territorial Disputes}, 
+      author={{\myname} and Samar Haider and Chris Callison-Burch},
+      year={2024},
+      journal={2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)}
 }
 ```
