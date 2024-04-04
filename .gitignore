@@ -5,4 +5,5 @@ outputs*/
 translate_*/
 __pycache__/
 
+.git_privaterepo/
 datasets/

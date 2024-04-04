@@ -40,7 +40,7 @@ class ModelBase(nn.Module):
         raise NotImplementedError
 
 class EncoderDecoderModel(ModelBase):
-    def __init__(self, config, model_name_or_path: Optional[str], parallelize: bool, **kwargs):
+    def __init__(self, config, model_name_or_path: Optional[str], **kwargs):
         """
         Args:
             config:
@@ -50,6 +50,12 @@ class EncoderDecoderModel(ModelBase):
         """
         super(EncoderDecoderModel, self).__init__()
         logger.info("Building EncoderDecoderModel")
+
+        if kwargs.get('parallelize'):
+            kwargs.pop('parallelize')
+            assert torch.cuda.is_available(), "You need at least 1 GPU to call `parallelize` (even though if there is only 1 GPU, there won't be any model parallelism)."
+            parallelize = True
+
         if model_name_or_path:
             self._model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_name_or_path,
@@ -57,7 +63,8 @@ class EncoderDecoderModel(ModelBase):
                 config=config,
                 device_map='auto',
                 torch_dtype=torch.float16,
-                low_cpu_mem_usage=True
+                low_cpu_mem_usage=True,
+                **kwargs
             )
         else:
             logger.info("Training new model from scratch")
@@ -86,13 +93,15 @@ class DecoderModel(ModelBase):
     def __init__(self, config, model_name_or_path: Optional[str], **kwargs):
         super(DecoderModel, self).__init__()
         logger.info("Building DecoderModel")
+        kwargs.pop('parallelize', None)
         if model_name_or_path:
             self._model = AutoModelForCausalLM.from_pretrained(
                 model_name_or_path,
                 config=config,
                 device_map='auto',
                 torch_dtype=torch.float16,
-                low_cpu_mem_usage=True
+                low_cpu_mem_usage=True,
+                **kwargs
             )
         else:
             logger.info("Training new model from scratch")

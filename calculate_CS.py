@@ -14,13 +14,13 @@ from lib import INFO_PATH
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input_path', type=Path)
+parser.add_argument('--extended', '-v', action='store_true')
 
 def load_response_table(path):
     df = pd.read_csv(path)
     df['Claimants'] = df['Claimants'].str.split(';')
     df['Claimant_Codes'] = df['Claimant_Codes'].str.split(';')
     df['Responses_d'] = df['Responses_d'].apply(ast.literal_eval)
-    # df['Unique_Claimants'] = df['Unique_Claimants'].apply(ast.literal_eval)
     return df
 
 def fix_responses_d(df):
@@ -105,23 +105,23 @@ if __name__ == "__main__":
     # kb CS
     kb_cs_l = [x for x in kb_cs_l if x is not None]
     mean_kb_cs = mean(kb_cs_l)
-    print(f'KB CS: {mean_kb_cs:.1%} ({kb_cs_l.count(True)}/{len(kb_cs_l)})'
-          f' -- filtered {n_rows-len(kb_cs_l)} empty')
+    print(f'KB CS:\t\t\t{mean_kb_cs:.1%} ({kb_cs_l.count(True)}/{len(kb_cs_l)})',
+    ' -- filtered {n_rows-len(kb_cs_l)} empty' if args.extended else '')
 
     # control CS
     control_cs_l = [x for x in control_cs_l if x is not None]
     mean_control_cs = mean(control_cs_l)
-    print(f'Control CS: {mean_control_cs:.1%} ({control_cs_l.count(True)}/{len(control_cs_l)})' \
-          f' -- filtered {n_rows-len(control_cs_l)} empty')
+    print(f'Control CS:\t\t{mean_control_cs:.1%} ({control_cs_l.count(True)}/{len(control_cs_l)})',
+          f' -- filtered {n_rows-len(control_cs_l)} empty' if args.extended else '')
 
     # non-control CS
     non_cs_l = [x for x in non_cs_l if x != []]
     non_cs_means = [mean(subl) for subl in non_cs_l]
     mean_non_cs = mean(non_cs_means)
-    print(f'Non-control CS: {mean_non_cs:.1%}' \
-          f' -- filtered {n_rows-len(non_cs_l)} empty')
+    print(f'Non-control CS:\t\t{mean_non_cs:.1%}',
+          f' -- filtered {n_rows-len(non_cs_l)} empty' if args.extended else '')
     delta = mean_control_cs - mean_non_cs
-    print(f'delta CS {delta:.1%} / {delta/mean_non_cs:.1%}')
+    print(f'Delta CS:\t\t{delta/mean_non_cs:.1%} (unnormalized {delta:.1%})')
 
     # consistency CS for unknowns
     unk_inds = df[df['Controller'] == 'Unknown'].index.tolist()
@@ -129,13 +129,13 @@ if __name__ == "__main__":
     cons_unk_cs_l = [x for x in cons_unk_cs_l if x != []]
     cons_unk_cs_means = [mean(subl) for subl in cons_unk_cs_l]
     mean_unk_cons_cs = mean(cons_unk_cs_means)
-    print(f'Consistency CS (unk): {mean_unk_cons_cs:.1%} (over {len(cons_unk_cs_l)} rows)')
+    print(f'Consistency CS (unk):\t{mean_unk_cons_cs:.1%} (over {len(cons_unk_cs_l)} rows)')
 
     # consistency CS
     cons_cs_l = [x for x in cons_cs_l if x != []]
     cons_cs_means = [mean(subl) for subl in cons_cs_l]
     mean_cons_cs = mean(cons_cs_means)
-    print(f'Consistency CS (all): {mean_cons_cs:.1%} (over {len(cons_cs_l)} rows)')
+    print(f'Consistency CS (all):\t{mean_cons_cs:.1%} (over {len(cons_cs_l)} rows)')
 
     # mean # for responses
     response_countries = df['Responses_d'].apply(lambda x: set(x.values())).transform(len)
@@ -143,16 +143,17 @@ if __name__ == "__main__":
     response_en_countries = df['Responses_d_en'].apply(lambda x: set(x.values())).transform(len)
     print(f'Mean # Response Countries + en: {response_en_countries.mean():.2f} ({response_en_countries.std():.2f})')
 
-    # query-level stats
-    claimants_list = [x for subl in df['Claimants'] for x in subl]
-    counter = Counter(claimants_list)
-    print(counter.most_common(2))
-    counter_values = list(counter.values())
-    print(f'Mean # territories per lang: {np.mean(counter_values):.2f} ({np.std(counter_values):.2f})')
+    if args.extended:
+        # query-level stats
+        claimants_list = [x for subl in df['Claimants'] for x in subl]
+        counter = Counter(claimants_list)
+        print(counter.most_common(2))
+        counter_values = list(counter.values())
+        print(f'Mean # territories per lang: {np.mean(counter_values):.2f} ({np.std(counter_values):.2f})')
 
-    claim_langs = df['Claimant_Codes'].apply(set).transform(len)
-    print(f'Mean # Claimant Languages: {claim_langs.mean():.2f} ({claim_langs.std():.2f})')
-    claims = df['Claimants'].apply(set).transform(len)
-    print(f'Mean # Claimants: {claims.mean():.2f} ({claims.std():.2f})')
+        claim_langs = df['Claimant_Codes'].apply(set).transform(len)
+        print(f'Mean # Claimant Languages: {claim_langs.mean():.2f} ({claim_langs.std():.2f})')
+        claims = df['Claimants'].apply(set).transform(len)
+        print(f'Mean # Claimants: {claims.mean():.2f} ({claims.std():.2f})')
 
-    print(f'Total # prompts: {df["Responses_d"].transform(len).sum()}', f' | Total # territories: {df.shape[0]}')
+        print(f'Total # prompts: {df["Responses_d"].transform(len).sum()}', f' | Total # territories: {df.shape[0]}')

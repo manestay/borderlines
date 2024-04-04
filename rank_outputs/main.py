@@ -25,10 +25,9 @@ def init_model(model_name_or_path, load_in_4bit):
     tokenizer.padding_side = 'right'
     config = AutoConfig.from_pretrained(model_name_or_path)
 
-    kwargs = {"device_map": "auto"}
-    if load_in_4bit:  # as model is loaded once, changing this arg later does nothing
-        kwargs.update(
-            {"load_in_4bit": True, 'bnb_4bit_compute_dtype': torch.float16})
+    kwargs = {}
+    if load_in_4bit:
+        kwargs = {"load_in_4bit": True, 'bnb_4bit_compute_dtype': torch.float16}
     model = ModelBase.from_config(
             config=config,
             model_name_or_path=model_name_or_path,
