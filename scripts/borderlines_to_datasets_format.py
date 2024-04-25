@@ -8,6 +8,7 @@ import datasets
 import pandas as pd
 
 sys.path.append('.')
+
 from lib import TERR_PATH, INFO_PATH, LETTERS
 
 parser = argparse.ArgumentParser()
@@ -22,17 +23,21 @@ parser.add_argument('--info_path', '-ip', default=INFO_PATH)
 if __name__ == "__main__":
     args = parser.parse_args()
 
-    ### make territories Dataset
+    # make territories Dataset
     df = pd.read_csv(args.terr_path)
     df['Claimants'] = df['Claimants'].str.split(';')
 
-    with open(args.prompts_path, 'r') as f:
-        prompts = [x.strip() for x in f.readlines()]
-    df['Query'] = prompts
+    if 'Query' not in df.columns:
+        with open(args.prompts_path, 'r') as f:
+            prompts = [x.strip() for x in f.readlines()]
+        df['Query'] = prompts
+
+    if 'QueryID' not in df.columns:
+        df['QueryID'] = df['Territory'].map(lambda x: f"{x.replace(' ', '_')}_en")
 
     territories = datasets.Dataset.from_pandas(df)
 
-    ### make countries Dataset
+    # make countries Dataset
     with open(args.info_path, 'r') as f:
         countries_info = json.load(f)
     countries_l = []
@@ -42,7 +47,7 @@ if __name__ == "__main__":
 
     countries = datasets.Dataset.from_list(countries_l)
 
-    ### make queries DatasetDict
+    # make queries DatasetDict
     queries = {}
     for line_path in args.terms_dir.glob('line_inds*'):
         curr_d = {}
@@ -63,8 +68,10 @@ if __name__ == "__main__":
             assert line_inds == sorted(line_inds)
 
         curr_d['Query_Native'] = prompts
-        curr_d['Claimants_Native'] =  choices_l
+        curr_d['Claimants_Native'] = choices_l
         curr_d['Index_Territory'] = line_inds
+        curr_d['QueryID'] = [f"{territories[x]['Territory'].replace(' ', '_')}_{code}"
+                             for x in line_inds]
 
         curr_ds = datasets.Dataset.from_dict(curr_d)
         queries[code] = curr_ds
@@ -73,10 +80,10 @@ if __name__ == "__main__":
     args.out_path.mkdir(exist_ok=True, parents=True)
     print(f'saving to {args.out_path}')
     out_path_t = args.out_path / 'territories'
-    territories.save_to_disk(out_path_t)
+    territories.save_to_disk(str(out_path_t))
 
     out_path_c = args.out_path / 'countries_info'
-    countries.save_to_disk(out_path_c)
+    countries.save_to_disk(str(out_path_c))
 
     out_path_q = args.out_path / 'queries'
-    queries.save_to_disk(out_path_q)
+    queries.save_to_disk(str(out_path_q))

@@ -4,7 +4,7 @@ Code and data for the [NAACL 2024](https://arxiv.org/abs/2305.14610) paper "This
 ## I. Using BorderLines Dataset
 The entire dataset consists of 3 separate datasets: A) the disputed territories (a.k.a. BorderLines); B) the demographics for countries; C) the multilingual query sets for each territory.
 
-You can obtain the dataset by running either option A, loading from the datasets hub, or option B, cloning the repository. Note that the evaluation suite (below) currently only supports B. WIP is update the suite to support A.
+You can obtain the dataset by running either option 1, loading from the datasets hub, or option 2, cloning the repository.
 
 ### 1. Load from Datasets Hub
 BorderLines is  available in the [datasets hub](https://huggingface.co/datasets/manestay/borderlines). Load by running:
@@ -14,15 +14,12 @@ import datasets
 
 # load disputed territories
 territories = datasets.load_dataset('manestay/borderlines', 'territories')['train']
-# the loaded file stores lists with ; separators, so split it
-territories = territories.map(lambda row: {'Claimants': row['Claimants'].split(';')})
 
 # load country demographics
 countries = datasets.load_dataset('manestay/borderlines', 'countries')['train']
 
 # load queries in 49 languages
 queries = datasets.load_dataset('manestay/borderlines', 'queries')
-queries = queries.map(lambda row: {'Claimants_Native': row['Claimants_Native'].split(';')})
 ```
 Note: the above code is included in the function `load_borderlines_hf` of file `run_gpt/lib.py`.
 
@@ -123,7 +120,7 @@ python calculate_CS.py outputs/gpt4-0314/vanilla/response_table.csv
 ## Citation
 ```
 @article{li2024land,
-      title={This Land is \{Your, My\} Land: Evaluating Geopolitical Biases in Language Models through Territorial Disputes}, 
+      title={This Land is \{Your, My\} Land: Evaluating Geopolitical Biases in Language Models through Territorial Disputes},
       author={Bryan Li and Samar Haider and Chris Callison-Burch},
       year={2024},
       journal={2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)}

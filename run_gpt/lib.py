@@ -78,27 +78,16 @@ def langcode2lang(countries_info):
 
 
 def load_borderlines_hf(dataset_dir=None):
-    def split_field(row, field):
-        return {field: row[field].split(';')}
-    split_field.__module__ = None
-
     if not dataset_dir:
         print('loading from the datasets hub...', end=' ')
-        # load disputed territories
-        territories = datasets.load_dataset('manestay/borderlines', 'territories')
-        # the loaded file stores lists with ; separators, so split it
-        territories = territories.map(split_field, fn_kwargs={'field': 'Claimants'})['train']
 
-        # load country demographics
+        territories = datasets.load_dataset('manestay/borderlines', 'territories')['train']
         countries = datasets.load_dataset('manestay/borderlines', 'countries')['train']
-
-        # load queries in 49 languages
         queries = datasets.load_dataset('manestay/borderlines', 'queries')
-        queries = queries.map(split_field, fn_kwargs={'field': 'Claimants_Native'})
     else:
         print(f'loading from {dataset_dir}...', end=' ')
         territories = datasets.load_from_disk(os.path.join(dataset_dir, 'territories'))
-        countries = datasets.load_from_disk(os.path.join(dataset_dir, 'countries_info'))
+        countries = datasets.load_from_disk(os.path.join(dataset_dir, 'countries'))
         queries = datasets.load_from_disk(os.path.join(dataset_dir, 'queries'))
     print('done')
     return territories, countries, queries
