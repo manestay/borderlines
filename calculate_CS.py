@@ -7,12 +7,15 @@ from itertools import combinations
 from pathlib import Path
 from statistics import mean
 
-import datasets
 import numpy as np
 import pandas as pd
 
+import datasets
+
 parser = argparse.ArgumentParser()
-parser.add_argument("input_path", type=Path)
+parser.add_argument(
+    "input_paths", type=Path, nargs="+", help="Path to the CSV files with responses"
+)
 parser.add_argument("--output_path", "-o", type=Path)
 parser.add_argument("--extended", "-v", action="store_true")
 parser.add_argument("--info_path", type=Path)
@@ -48,25 +51,12 @@ def get_responses_d_en(df):
     return pd.Series(res_ds_new)
 
 
-if __name__ == "__main__":
-    args = parser.parse_args()
-    df = load_response_table(args.input_path)
-
-    if args.info_path:
-        with args.info_path.open("r") as f:
-            countries_info = json.load(f)
-    else:
-        countries = datasets.load_dataset("manestay/borderlines", "countries")["train"]
-
+def calculate_CS(df: pd.DataFrame, fix_responses_d, get_responses_d_en) -> dict:
     df["Responses_d"] = fix_responses_d(df)
     df["Unique_Claimants"] = df["Responses_d"].apply(lambda x: set(x.values()))
 
     df["Responses_d_en"] = get_responses_d_en(df)
     df["All_Claimants"] = df["Responses_d"].apply(lambda x: x.values())
-
-    # len_orig = len(df)
-    # df = df[df['Claimant_Codes'].apply(lambda x: len(set(x))> 1 ) ]
-    # print(f'{len(df)} rows after ensuring 2+ languages each (from {len_orig} rows)')
 
     control_cs_l, non_cs_l, kb_cs_l, cons_cs_l = [], [], [], []
 
@@ -112,6 +102,8 @@ if __name__ == "__main__":
     n_rows = len(df)
 
     metrics_d = {}
+    metrics_d["num_queries"] = int(df["Responses_d_en"].transform(len).sum())
+    metrics_d["num_territories"] = n_rows
 
     # kb CS
     kb_cs_l = [x for x in kb_cs_l if x is not None]
@@ -158,52 +150,160 @@ if __name__ == "__main__":
     response_countries = df["Responses_d"].apply(lambda x: set(x.values())).transform(len)
     rcm, rcs = response_countries.mean(), response_countries.std()
     metrics_d["Response Countries mean"] = rcm
-    metrics_d["Response Countries stdev"] = rcs
+    metrics_d["Response Countries σ"] = rcs
 
     response_en_countries = df["Responses_d_en"].apply(lambda x: set(x.values())).transform(len)
     recm, recs = response_en_countries.mean(), response_en_countries.std()
     metrics_d["Response Countries + en mean"] = recm
-    metrics_d["Response Countries + en stdev"] = recs
+    metrics_d["Response Countries + en σ"] = recs
 
-    if not args.quiet:
-        print("--- Means ---")
+    return metrics_d
+
+
+def print_summary(metrics_d, df):
+    mean_kb_cs = metrics_d.get("KB CS")
+    kb_frac = metrics_d.get("KB CS Frac")
+    mean_control_cs = metrics_d.get("Control CS")
+    cs_frac = metrics_d.get("Control CS Frac")
+    mean_non_cs = metrics_d.get("Non-control CS")
+    delta_cs = metrics_d.get("Delta CS")
+    delta = metrics_d.get("Delta CS unnormalized")
+    mean_unk_cons_cs = metrics_d.get("Consistency CS unk")
+    cons_unk_cs_l = metrics_d.get("Consistency CS unk rows")
+    mean_cons_cs = metrics_d.get("Consistency CS all")
+    cons_cs_l = metrics_d.get("Consistency CS all rows")
+    rcm = metrics_d.get("Response Countries mean")
+    rcs = metrics_d.get("Response Countries σ")
+    recm = metrics_d.get("Response Countries + en mean")
+    recs = metrics_d.get("Response Countries + en σ")
+    n_rows = metrics_d.get("num_territories")
+    n_queries_list = metrics_d.get("num_queries list")
+
+    print("--- Means ---")
+
+    if n_queries_list:
+        # if not all queries have the same number of responses, print a warning
+        if not all(x == n_queries_list[0] for x in n_queries_list):
+            print("WARNING: Not all queries have the same number of responses. ")
+            print(f"# queries per run: {n_queries_list}")
+        else:
+            print(f"All runs have {n_queries_list[0]} queries")
+        kb_cs_stdev = metrics_d.get("KB CS σ")
+        control_cs_stdev = metrics_d.get("Control CS σ")
+        non_cs_stdev = metrics_d.get("Non-control CS σ")
+        unk_cons_cs_stdev = metrics_d.get("Consistency CS unk σ")
+        cons_cs_stdev = metrics_d.get("Consistency CS all σ")
+        delta_cs_stdev = metrics_d.get("Delta CS σ")
+        delta_stdev = metrics_d.get("Delta CS unnormalized σ")
+
+        print(f"KB CS:\t\t\t{mean_kb_cs:.1%} (σ {kb_cs_stdev:.1%})")
+        print(f"Control CS:\t\t{mean_control_cs:.1%} (σ {control_cs_stdev:.1%})")
+        print(f"Non-control CS:\t\t{mean_non_cs:.1%} (σ {non_cs_stdev:.1%})")
+        print(f"Delta CS:\t\t{delta_cs:.1%} (σ {delta_cs_stdev:.1%})")
+        print(f"Delta CS abs:\t\t{delta:.1%} (σ {delta_stdev:.1%})")
+        print(
+            f"Consistency CS (unk):\t{mean_unk_cons_cs:.1%} (σ {unk_cons_cs_stdev:.1%}, over {cons_unk_cs_l} rows)"
+        )
+        print(
+            f"Consistency CS (all):\t{mean_cons_cs:.1%} (σ {cons_cs_stdev:.1%}, over {cons_cs_l} rows)"
+        )
+        print(f"Mean # Response Countries: {rcm:.2f} (σ {rcs:.2f})")
+        print(f"Mean # Response Countries + en: {recm:.2f} (σ {recs:.2f})")
+
+        if args.extended:
+            print("--- Full lists ---")
+            longest_field = "Consistency CS (all) list"
+
+            # print the lists for each metric
+            def print_percentage_list(name, lst):
+                print(f"{name:<{len(longest_field)}}: ", end="")
+                for x in lst:
+                    print(f"{x:.1%}, ", end="")
+                print()
+
+            print_percentage_list("KB CS list", metrics_d["KB CS list"])
+            print_percentage_list("Control CS list", metrics_d["Control CS list"])
+            print_percentage_list("Non-control CS list", metrics_d["Non-control CS list"])
+            print_percentage_list("Delta CS list", metrics_d["Delta CS list"])
+            print_percentage_list("Delta CS abs list", metrics_d["Delta CS unnormalized list"])
+            print_percentage_list("Consistency CS (unk) list", metrics_d["Consistency CS unk list"])
+            print_percentage_list(longest_field, metrics_d["Consistency CS all list"])
+    else:
         print(
             f"KB CS:\t\t\t{mean_kb_cs:.1%} ({kb_frac})",
-            f" -- filtered {n_rows - len(kb_cs_l)} empty" if args.extended else "",
+            f" -- filtered {n_rows - int(kb_frac.split('/')[1])} empty" if args.extended else "",
         )
         print(
             f"Control CS:\t\t{mean_control_cs:.1%} ({cs_frac})",
-            f" -- filtered {n_rows - len(control_cs_l)} empty" if args.extended else "",
+            f" -- filtered {n_rows - int(cs_frac.split('/')[1])} empty" if args.extended else "",
         )
         print(
             f"Non-control CS:\t\t{mean_non_cs:.1%}",
-            f" -- filtered {n_rows - len(non_cs_l)} empty" if args.extended else "",
+            f" -- filtered {n_rows - len([x for x in df['Non_CS'] if x != []])} empty"
+            if args.extended
+            else "",
         )
-        print(f"Delta CS:\t\t{delta_cs:.1%} (unnormalized {delta:.1%})")
-        print(f"Consistency CS (unk):\t{mean_unk_cons_cs:.1%} (over {len(cons_unk_cs_l)} rows)")
-        print(f"Consistency CS (all):\t{mean_cons_cs:.1%} (over {len(cons_cs_l)} rows)")
-        print(f"Mean # Response Countries: {rcm:.2f} ({rcs:.2f})")
-        print(f"Mean # Response Countries + en: {recm:.2f} ({recs:.2f})")
+        print(f"Delta CS:\t\t{delta_cs:.1%}")
+        print(f"Delta CS abs:\t\t{delta:.1%}")
+        print(f"Consistency CS (unk):\t{mean_unk_cons_cs:.1%} (over {cons_unk_cs_l} rows)")
+        print(f"Consistency CS (all):\t{mean_cons_cs:.1%} (over {cons_cs_l} rows)")
+        print(f"Mean # Response Countries: {rcm:.2f} (σ {rcs:.2f})")
+        print(f"Mean # Response Countries + en: {recm:.2f} (σ {recs:.2f})")
 
-    if args.extended:
-        # query-level stats
-        claimants_list = [x for subl in df["Claimants"] for x in subl]
-        counter = Counter(claimants_list)
-        print(counter.most_common(2))
-        counter_values = list(counter.values())
-        print(
-            f"Mean # territories per lang: {np.mean(counter_values):.2f} ({np.std(counter_values):.2f})"
-        )
+        if args.extended:
+            # query-level stats
+            claimants_list = [x for subl in df["Claimants"] for x in subl]
+            counter = Counter(claimants_list)
+            print(counter.most_common(2))
+            counter_values = list(counter.values())
+            print(
+                f"Mean # territories per lang: {np.mean(counter_values):.2f} ({np.std(counter_values):.2f})"
+            )
 
-        claim_langs = df["Claimant_Codes"].apply(set).transform(len)
-        print(f"Mean # Claimant Languages: {claim_langs.mean():.2f} ({claim_langs.std():.2f})")
-        claims = df["Claimants"].apply(set).transform(len)
-        print(f"Mean # Claimants: {claims.mean():.2f} ({claims.std():.2f})")
+            claim_langs = df["Claimant_Codes"].apply(set).transform(len)
+            print(f"Mean # Claimant Languages: {claim_langs.mean():.2f} ({claim_langs.std():.2f})")
+            claims = df["Claimants"].apply(set).transform(len)
+            print(f"Mean # Claimants: {claims.mean():.2f} ({claims.std():.2f})")
 
-        print(
-            f"Total # prompts: {df['Responses_d'].transform(len).sum()}",
-            f" | Total # territories: {df.shape[0]}",
-        )
+            print(
+                f"Total # prompts: {df['Responses_d'].transform(len).sum()}",
+                f" | Total # territories: {df.shape[0]}",
+            )
+
+
+def is_numeric(elem):
+    return isinstance(elem, (int, float))
+
+
+if __name__ == "__main__":
+    args = parser.parse_args()
+    if len(args.input_paths) == 1:
+        df = load_response_table(args.input_paths[0])
+        metrics_d = calculate_CS(df, fix_responses_d, get_responses_d_en)
+        if not args.quiet:
+            print_summary(metrics_d, df)
+    else:
+        metrics_list_d = {}
+        for input_path in args.input_paths:
+            df = load_response_table(input_path)
+            metrics_d = calculate_CS(df, fix_responses_d, get_responses_d_en)
+
+            for k, v in metrics_d.items():
+                if k not in metrics_list_d:
+                    metrics_list_d[k] = []
+                metrics_list_d[k].append(v)
+
+        metrics_d = {}
+        for k, v_list in metrics_list_d.items():
+            if is_numeric(v_list[0]):
+                metrics_d[f"{k} list"] = v_list
+                metrics_d[f"{k}"] = np.mean(v_list)
+                metrics_d[f"{k} σ"] = np.std(v_list)
+            else:
+                metrics_d[k] = v_list
+
+        if not args.quiet:
+            print_summary(metrics_d, df)
 
     if args.output_path:
         with args.output_path.open("w") as f:
