@@ -7,10 +7,9 @@ from itertools import combinations
 from pathlib import Path
 from statistics import mean
 
+import datasets
 import numpy as np
 import pandas as pd
-
-import datasets
 
 parser = argparse.ArgumentParser()
 parser.add_argument(

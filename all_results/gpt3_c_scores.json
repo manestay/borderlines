@@ -1,0 +1,19 @@
+{
+  "num_queries": 735,
+  "num_territories": 256,
+  "KB CS": 0.5061728395061729,
+  "KB CS Frac": "82/162",
+  "Control CS": 0.536,
+  "Control CS Frac": "67/125",
+  "Non-control CS": 0.4340277777777778,
+  "Delta CS": 0.23494400000000004,
+  "Delta CS unnormalized": 0.10197222222222224,
+  "Consistency CS unk": 0.4444444444444444,
+  "Consistency CS unk rows": 75,
+  "Consistency CS all": 0.5833333333333334,
+  "Consistency CS all rows": 216,
+  "Response Countries mean": 1.41015625,
+  "Response Countries \u03c3": 0.5528308387513398,
+  "Response Countries + en mean": 1.58984375,
+  "Response Countries + en \u03c3": 0.5938693120577301
+}

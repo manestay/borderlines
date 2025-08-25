@@ -117,6 +117,11 @@ python calculate_CS.py outputs/gpt4-0314/vanilla/response_table.csv
 # modify args for outputs from other models and prompts
 ```
 
+#### 4. Graph plot CSV scores
+`all_results/` contains response tables and score files for all runs, after running the script `calculate_CS.sh`. That script also generates the tables, in CSV and Latex format.
+
+See `scripts/plot_CS_results.ipynb` to generate the plots.
+
 ## Citation
 ```
 @article{li2024land,
